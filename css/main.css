@@ -20,7 +20,10 @@ body {
 	color: #237841 !important;
 	font-weight: bold !important;
 }
-
+.navbar {
+	padding-left: 5%!important;
+	padding-right: 5% !important;
+  }
 .login-btn {
 	border: 2px solid #237841 !important;
 	font-size: 10px !important;
