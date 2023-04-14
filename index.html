@@ -13,7 +13,42 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="assets/fwglogo.png">
 	<title>RoboFreaks</title>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+		const textEl = document.getElementsByTagName('h1')[0];
+		const lettersP = textEl.textContent.split('');
+
+		const randomTime = () => parseInt(Math.random() * 40 + 200);
+
+		const letterP = () => {
+		if (!lettersP.length) return;
+		textEl.innerHTML += lettersP.shift();
+		setTimeout(letterP, randomTime());
+		};
+
+		textEl.textContent = '';
+		letterP();
+
+		const headingEl = document.getElementsByTagName('h1')[0];
+		const lettersH1 = headingEl.textContent.split('');
+		const letterEls = [];
+		headingEl.textContent = '';
+
+		while (lettersH1.length) {
+		const curLetter = lettersH1.shift();
+		const span = document.createElement('span');
+		span.textContent = curLetter;
+		if (curLetter !== ' ')
+			span.classList.add('letter');
+		letterEls.push(span);
+		headingEl.appendChild(span);
+		}
+	});
+		</script>
 </head>
+
+
 <body>
 <nav class="navbar navbar-expand-lg bg-transparent">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,44 +98,47 @@
 
 <!-- -->
 <div class="heading">
-	<h1 class="display-5 title">RoboFreaks</h1>
-	<p class="subtitle">Servus! Wir sind die RoboFreaks vom Frankenwald Gymnasium Kronach. <br /> Als Team nehmen wir seit _Jahr_ and der First Lego Leauge Teil. </p>
-	<a class="btn btn-primary btn-lg" href="#/" target="_blank" role="button">Download Gh Repo (not available rn)</a>
-	<a class="btn btn-secondary btn-lg" href="#/" target="_blank" role="button">submit issue/question (also not available)</a>
+	<h1 class="title">RoboFreaks</h1>
+	<br /><br /><br />
+	<p class="subtitle">Servus! Wir sind die RoboFreaks vom Frankenwald Gymnasium Kronach. <br /> 
+		Wir sind ein Team aus 11 Personen. Jeden Freitag treffen wir uns als Robotik AG in der Physik unserer Schule, um dort zu bauen, programmieren und blödsinn zu treiben.  <br /> 
+		Seit 2017 nehmen wir an der First Lego League Teil.</p>
+	<!-- <a class="btn btn-primary btn-lg" href="#/" target="_blank" role="button">Download Gh Repo (not available rn)</a> --> 
+	<!--<a class="btn btn-secondary btn-lg" href="#/" target="_blank" role="button">submit issue/question (also not available)</a> --> 
 	<br /><br /><br /><br /><br /><br />
 </div>
 
 <div class="features">
 	<div class="title">First Lego League</div>
 	<div class="subtitle"> Die FLL ist ein Wettbewerb der sich aus den 4 Teilbereichen, 
-		Robot-Game, Forschung, Robotdesign und Grundwerte zusammenbaut.
+		Robot-Game, Forschung, Robotdesign und Grundwerte zusammenbaut. <br /> 
 		Die Ergebnisse aus diesen werden zusammengerechnet und das beste Team erhält den „Champion Pokal“. 
 		Genauere Informationen gibt es auf der
 		<button class="btn login-btn btn-outline-accent my-2 my-sm-0" onClick="window.location.href='https://www.first-lego-league.org/de/entdecken/challenge'">Offiziellen FLL Seite</button>.</div>
 	<!-- <div class="subtitle"> <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" onClick="window.location.href='https://firstlegoleague.org/'">   </button> </div> -->   
 	<div class="cards">
-		<div class="card" style="width: 18rem;">
+		<div class="card" style="width: 19rem;">
 		<div class="card-body">
 			<h5 class="card-title">Robot Game</h5>
-			<p class="card-text">Für das Robot Game werden jedes Jahr ein Spielfeld mit vorgegebenen Aufgaben versendet.
-				die Teams müssen einen eigenen Roboter konstruieren, bauen und programmieren, sodass dieser autonom innerhalb von 2:30 Minuten möglichst viele Aufgaben auf der Matte erledigt. </p>
+			<p class="card-text">Jedes Jahr gibt es ein neues Spielfeld mit Aufgaben aus LEGO, welches uns zugesendet wird.
+				Die Teams konstruieren, bauen und programmieren einen Roboter, sodass dieser möglichst viele Aufgaben autonom in 2:30 Minunten auf der Matte erledigt. </p>
 		</div>
 	</div>
-		<div class="card" style="width: 18rem;">
+		<div class="card" style="width: 19rem;">
 			<div class="card-body">
 				<h5 class="card-title">Robot Design</h5>
-				<p class="card-text">Beim Roboterdesign wird einer Jury innerhalb von 5 Minuten der Roboter vorgestellt und anschließend Fragen der Juroren beantwortet. 
-					In dem kurzen Zeitfenster muss gezeigt werden was den Roboter, die Module, die Programmierung und die Strategie so besonders und innovativ macht. </p>
+				<p class="card-text">Einer Jury muss innerhalb von 5 Minuten gezeigt werden, was unseren Roboter, dessen Module und Programmierung, 
+					sowie unsere Strategie so besonders und innovativ macht. Anschließend muss man noch den Fragen der Jury Rede und Antwort stehen. </p>
 			</div>
 		</div>
-		<div class="card" style="width: 18rem;">
+		<div class="card" style="width: 19rem;">
 			<div class="card-body">
 				<h5 class="card-title">Forschung</h5>
-				<p class="card-text">Jedes Jahr gibt es ein Thema, zu dem die Teams wissenschaftlich arbeiten sollen. 
+				<p class="card-text">Jedes Jahr gibt es ein neues, global relevantes Thema, zu dem die Teams wissenschaftlich arbeiten sollen. 
 					Es selbstständig eine passende Problemstellung gefunden werden und anschließend eine innovative Lösungsidee gefunden werden. </p>
 			</div>
 		</div>
-		<div class="card" style="width: 18rem;">
+		<div class="card" style="width: 19rem;">
 			<div class="card-body">
 				<h5 class="card-title">Grundwerte</h5>
 				<p class="card-text">Bei den Vorträgen zur Forschung und zum Roboterdesign beobachtet die Jury außerdem das Team selbst. Für die FLL sind Grundwerte wie Entdeckung, Innovation, Wirkung, Inklusion, Teamwork und Spaß ein wichtiger Aspekt des Bildungsprogramms. </p>
@@ -113,6 +151,8 @@
 	<div class="title">Das Team</div>
 	
 	<!-- Hier soll das Team gezeigt werden. Ähnlich wie bei Mindfactory: http://jufotec.ch/teammindfactory/-->
+	<div class="subtitle">Teilnehmer</div>
+	<div  class="subtitle">Coaches</div>
 
 	<div class="cards">
 		<div class="card statistic" style="width: 18rem;">

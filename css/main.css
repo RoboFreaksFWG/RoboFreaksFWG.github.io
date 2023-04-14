@@ -54,12 +54,23 @@ body {
     background-color: #2C2F33 !important
 }
 .heading {
+    text-align: center !important;
     padding: 160px 50px !important;
     color: #fff !important;
     background-image: url("../assets/wavy-purple.svg") !important;
     background-position: bottom !important;
     background-size: 300% !important;
     background-repeat: no-repeat !important;
+}
+.heading .title {
+    font-size: 90px !important;
+    line-height: 90px !important;
+    margin-bottom: -2px !important;
+}
+.heading .subtitle {
+    color: rgba(255, 255, 255, 0.685) !important;
+    font-size: 20px !important;
+    font-family: 'Lato', sans-serif;
 }
 
 .title {
