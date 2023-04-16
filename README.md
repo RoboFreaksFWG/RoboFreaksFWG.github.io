@@ -1,2 +1,2 @@
 # robo-freaks.github.io
-Joa.
+In diesem Repo ist der Code für unsere Webseite RoboFreaks.de gespeichert.
