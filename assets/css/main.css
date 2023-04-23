@@ -1,0 +1,44 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1D1E28;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	border-top: 6px #237841 solid ;
+	font-size: 16px;
+	position: relative ;
+}
+
+.nav-link {
+	color: white !important;
+	font-family: Lato, sans-serif !important;
+	text-transform: capitalize !important;
+}
+.nav-link.active {
+	color: #237841 !important;
+	background-color: transparent !important ;
+}
+.sm-icons {
+	flex-direction: row;
+}
+@media only screen and (max-width: 960px) {
+	.sm-icons .nav-item {
+	  padding-right: 1em;
+	}
+  }
+
+.heading {
+	text-align: center !important;
+	padding: 160px 50px !important;
+	color: #fff !important;
+	background-image: url("/assets/images/wavy-green.svg") !important;
+	background-position: bottom !important;
+	background-size: 300% !important;
+	background-repeat: no-repeat !important;
+}
+.heading .title {
+	font-size: 90px !important;
+	line-height: 90px !important;
+	margin-bottom: -2px !important;
+}
