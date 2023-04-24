@@ -19,14 +19,6 @@ body {
 	color: #237841 !important;
 	background-color: transparent !important ;
 }
-.sm-icons {
-	flex-direction: row;
-}
-@media only screen and (max-width: 960px) {
-	.sm-icons .nav-item {
-	  padding-right: 1em;
-	}
-  }
 
 .heading {
 	text-align: center !important;
