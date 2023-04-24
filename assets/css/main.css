@@ -6,10 +6,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	border-top: 6px #237841 solid ;
-	font-size: 16px;
+	font-size: .9rem;
 	position: relative ;
 }
 
+/* Navbar */
 .nav-link {
 	color: white !important;
 	font-family: Lato, sans-serif !important;
@@ -19,18 +20,37 @@ body {
 	color: #237841 !important;
 	background-color: transparent !important ;
 }
+.navbar-collapse{
+	transition: all .4s;
+}
+.navbar-toggler:focus{
+	box-shadow: none;
+}
 
-.heading {
+/* Main */
+.about{
 	text-align: center !important;
-	padding: 160px 50px !important;
+	padding-top: 10rem !important;
+	padding-bottom: 11rem;
 	color: #fff !important;
 	background-image: url("/assets/images/wavy-green.svg") !important;
 	background-position: bottom !important;
 	background-size: 300% !important;
 	background-repeat: no-repeat !important;
 }
-.heading .title {
-	font-size: 90px !important;
-	line-height: 90px !important;
-	margin-bottom: -2px !important;
+.about .title {
+	font-size: 6rem !important;
+}
+
+.team{
+	padding-top: 1rem !important;
+	background: #237841 !important;
+	background-image: url("/assets/images/wavy-dark.svg") !important;
+	background-position: bottom !important;
+	background-size: 200% !important;
+	background-repeat: no-repeat !important;
+}
+.team .title {
+	font-size: 4rem !important;
+	text-align: center !important;
 }

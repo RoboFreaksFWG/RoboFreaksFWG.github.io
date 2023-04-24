@@ -17,25 +17,24 @@
 </head>
 
 
-<!-- <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> -->
 <body>
 	<!--Navbar-->
 	<nav class="navbar navbar-expand-md sticky-top navbar-dark" style="background-color:#1a1a24">
-		<div class="container d-flex justify-content-between">
+		<div class="container d-flex justify-content-between">			
+			<!--Left_Brand-->
 			<div class="p-2">
-				<a class="navbar-brand " href="#">
+				<div>
 					<img src="assets/images/fwglogo.png" height="38">
-				</a>
-				<a class="navbar-brand d-none d-xl-inline" href="#">
-					RoboFreaks
-				</a>
+					</a>
+					<a class="navbar-brand d-none d-lg-inline" href="#">
+						RoboFreaks
+					</a>
+				</div>	
 			</div>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
 			<div class="p-2">
+				<!--Middle-Items-->
 				<div class="collapse navbar-collapse" id="navbarContent">
-					<ul class="nav nav-pills mx-auto">
+					<ul class="nav nav-pills flex-column flex-md-row">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#about">Über Uns</a>
 						</li>
@@ -51,6 +50,7 @@
 					</ul>
 				</div>
 			</div>
+			<!--Right-SocialMedia-->
 			<div class="p-2">
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul class="navbar-nav flex-row">
@@ -59,26 +59,40 @@
 						<li class="p-2" href="https://www.first-lego-league.org/de/" target="_blank">FLL</li>
 						<li class="p-2" href="https://www.frankenwald-gymnasium.de/" target="_blank">FWG</li>
 					</ul>
-				</div>
-			</div>			
+				</div>	
+			</div>
+			<!--Collapse-Button-->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>		
 		</div>
 	</nav>
 
+
 	<!--Main-->
 	<div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-		<div class="heading">
+		<div class="about">
 			<div class="container">
 				<h1 class="title" id="about">RoboFreaks</h1>
-				<br /><br /><br />
-				<p class="subtitle">Servus! Wir sind die RoboFreaks vom Frankenwald Gymnasium Kronach. <br /> 
-				Wir sind ein Team aus 11 Personen. Jeden Freitag treffen wir uns als Robotik AG in der Physik unserer Schule, um dort zu bauen, programmieren und blödsinn zu treiben.  <br /> 
-				Seit 2017 nehmen wir an der First Lego League Teil.</p>
-				<br /><br /><br />
+				<br><br>
+				<p class="subtitle">Servus! Wir sind die RoboFreaks vom <a href="https://www.frankenwald-gymnasium.de/" target="_blank">Frankenwald Gymnasium Kronach</a>. <br> 
+				Wir sind ein Team aus 11 aus Schülern von der 7. bis zur 12. Klasse. 
+				Jeden Freitag (vor Wettbewerben auch häufiger) treffen wir uns als Robotik AG in der Physik unserer Schule. 
+				Dort bauen und programmieren wir an unseren Lego Robotern. Forschen, Experimentieren, Essen oder treiben blödsinn.   
+				</p>
+				<br/><br /><br />
 			</div>
 		</div>
 		
-		<h2 id="team">Second heading</h2>
-		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<div class="team">
+			<div class="container">
+				<h2 class="title" id="team"> Team</h2>
+				<br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<h3 id="competition">Third heading</h3>
 	</div>
 	
