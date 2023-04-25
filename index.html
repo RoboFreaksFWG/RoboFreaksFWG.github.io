@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
 	<meta charset="UTF-8">
@@ -19,22 +19,19 @@
 
 <body>
 	<!--Navbar-->
-	<nav class="navbar navbar-expand-md sticky-top navbar-dark" style="background-color:#1a1a24">
+	<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color:#1a1a24">
 		<div class="container d-flex justify-content-between">			
 			<!--Left_Brand-->
 			<div class="p-2">
-				<div>
-					<img src="assets/images/fwglogo.png" height="38">
-					</a>
-					<a class="navbar-brand d-none d-lg-inline" href="#">
+					<a class="navbar-brand" href="#">
+						<img src="assets/images/fwglogo.png" height="38">
 						RoboFreaks
 					</a>
-				</div>	
 			</div>
 			<div class="p-2">
 				<!--Middle-Items-->
 				<div class="collapse navbar-collapse" id="navbarContent">
-					<ul class="nav nav-pills flex-column flex-md-row">
+					<ul class="nav nav-pills flex-column flex-sm-row">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="#about">Über Uns</a>
 						</li>
@@ -54,10 +51,10 @@
 			<div class="p-2">
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul class="navbar-nav flex-row">
-						<li class="p-2" href="https://www.instagram.com/robofreaks_fwg/" target="_blank"><img src="assets/images/instagram.svg" height="25"></li>
-						<li class="p-2" href="https://github.com/RoboFreaksFWG" target="_blank"><img src="assets/images/github.svg" height="25"></li>
-						<li class="p-2" href="https://www.first-lego-league.org/de/" target="_blank">FLL</li>
-						<li class="p-2" href="https://www.frankenwald-gymnasium.de/" target="_blank">FWG</li>
+						<li class="p-2"> <a class="link" href="https://www.instagram.com/robofreaks_fwg/" target="_blank"><img src="assets/images/instagram.svg" height="25"></a></li>
+						<li class="p-2"> <a class="link" href="https://github.com/RoboFreaksFWG" target="_blank"><img src="assets/images/github.svg" height="25"></a></li>
+						<li class="p-2"> <a class="link" href="https://www.first-lego-league.org/de/" target="_blank">FLL</a></li>
+						<li class="p-2"> <a class="link" href="https://www.frankenwald-gymnasium.de/" target="_blank">FWG</a></li>
 					</ul>
 				</div>	
 			</div>
@@ -70,13 +67,15 @@
 
 
 	<!--Main-->
-	<section>
-		<div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+	<div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+		
+		<!--About Section-->
+		<section id="about">
 			<div class="about">
 				<div class="container">
-					<h1 class="title" id="about">RoboFreaks</h1>
+					<h1 class="title">Robo&shyFreaks</h1>
 					<br><br>
-					<p class="subtitle">Servus! Wir sind die RoboFreaks vom <a href="https://www.frankenwald-gymnasium.de/" target="_blank">Frankenwald Gymnasium Kronach</a>. <br> 
+					<p class="subtitle">Servus! Wir sind die RoboFreaks vom <a class="link" href="https://www.frankenwald-gymnasium.de/" target="_blank">Frankenwald Gymnasium Kronach</a>. <br> 
 					Wir sind ein Team aus 11 aus Schülern von der 7. bis zur 12. Klasse. 
 					Jeden Freitag (vor Wettbewerben auch häufiger) treffen wir uns als Robotik AG in der Physik unserer Schule. 
 					Dort bauen und programmieren wir an unseren Lego Robotern. Forschen, Experimentieren, Essen oder treiben blödsinn.   
@@ -84,155 +83,152 @@
 					<br/><br /><br />
 				</div>
 			</div>
-		</div>
-	</section>
-	
-	<section>
-		<div class="team">
-			<div class="container">
-				<h2 class="title" id="team"> Team</h2>
-				
-				<div class="row" data-scrollreveal="enter left after 0s over 0.1s" data-sr-init="true" data-sr-complete="true">
-					<span id="zerif_team-widget-8">
-						<div class="col-lg-3 col-sm-3 team-box">
-							<div class="team-member" tabindex="0">
-									<figure class="profile-pic">
-										<img src="assets/images/PortaitEmmaWatson.jpg">
-									</figure>
-								<div class="member-details">
-										<h3 class="dark-text red-border-bottom">Emma Watson</h3>
-										<div class="position">Schauspielerin</div>
-								</div>
-								<div class="social-icons">
-									<ul>
-									</ul>
-								</div>
-									<div class="details">
-										Ganz viel Text über irgendein Opfer der jetzt was sagen muss. HAHAHAHAHAHAHAHHA
+		</section>
+
+		<!--Team Section-->
+		<section id="team">
+			<div class="team">
+				<div class="container">
+					<h2 class="title">Team</h2>
+					<div class="row justify-content-center">
+						<div class="col">
+							<div class="card mb-4">
+									<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 1">
+									<div class="card-body text-center">
+										<hr>
+										<h5 class="card-title">Konrad</h5>
+										<p class="card-text">Hacker</p>
 									</div>
 							</div>
 						</div>
-					</span>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 2">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Danis</h5>
+									<p class="card-text">Eiskalt</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Jona&shythan</h5>
+									<p class="card-text">Der Bessere</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Lovis</h5>
+									<p class="card-text">Ex Sales Manager</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Jana</h5>
+									<p class="card-text">Fancy</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Anton</h5>
+									<p class="card-text">Läufer</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Jona&shythan</h5>
+									<p class="card-text">Immer hungirg</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Fabian</h5>
+									<p class="card-text">Überarbeitet</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Till</h5>
+									<p class="card-text">Co Coach</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Nico</h5>
+									<p class="card-text">Veteran</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Chris&shytian</h5>
+									<p class="card-text">Schinken Coach</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/images/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body text-center">
+									<hr>
+									<h5 class="card-title">Armin</h5>
+									<p class="card-text">Kameramann</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+	
+		<!--Competition Section-->
+		<section>
+			<div class="competition">
+				<div class="container">
+					<h2 class="title" id="competition">First Lego League</h2>
 				</div>
 			</div>
-		</div>
-	</section>
-		
-
-
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-				<div class="row text-center col-9">
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Danis</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Lovis</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Jonathan</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Jana</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Dude</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Konrad</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Armin</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Till</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Fabian</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Jonathan</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Niggo</figcaption>
-						</figure>
-					</div>
-					<div class="col-sm">
-						<figure>
-							<img src="assets/images/person.svg" width="200px">
-							<figcaption>Christian</figcaption>
-						</figure>
-					</div>
-				</div>
-
-
-
-				<br><br><br><br><br><br><br><br>
-				<div class="row">
-					<div class="d-flex align-items-center">
-						<div class="flex-shrink-0">
-						  <img src="assets/images/person.svg" width="150px">
-						</div>
-						<div class="flex-grow-1 ms-3">
-						  This is some content from a media component. You can replace this with any content and adjust it as needed.
-						</div>
-					  </div>
-					<div class="col-sm">
-						<img src="assets/images/person.svg" width="150px">
-						<p class="">Till</p>
-					</div>
-					<div class="col-sm">
-						Fabian
-					</div>
-					<div class="col-sm">
-						Niggo
-					</div>
-					<div class="col-sm">
-						Jonathan
-					</div>
-					<div class="col-sm">
-						Jana
-					</div>
-				</div>
-				<br><br><br><br><br><br><br><br>
-			</div>
-		</div>
-
-
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<h3 id="competition">Third heading</h3>
+		</section>
 	</div>
+	
+
+	
+		
 	
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
