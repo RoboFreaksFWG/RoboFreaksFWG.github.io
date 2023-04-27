@@ -1,203 +1,310 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/now-ui-kit.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap">
+
 	<link rel="shortcut icon" type="image/png" href="assets/fwglogo.png">
 	<title>RoboFreaks</title>
-
-	<script>
-		document.addEventListener("DOMContentLoaded", () => {
-		const textEl = document.getElementsByTagName('h1')[0];
-		const lettersP = textEl.textContent.split('');
-
-		const randomTime = () => parseInt(Math.random() * 40 + 200);
-
-		const letterP = () => {
-		if (!lettersP.length) return;
-		textEl.innerHTML += lettersP.shift();
-		setTimeout(letterP, randomTime());
-		};
-
-		textEl.textContent = '';
-		letterP();
-
-		const headingEl = document.getElementsByTagName('h1')[0];
-		const lettersH1 = headingEl.textContent.split('');
-		const letterEls = [];
-		headingEl.textContent = '';
-
-		while (lettersH1.length) {
-		const curLetter = lettersH1.shift();
-		const span = document.createElement('span');
-		span.textContent = curLetter;
-		if (curLetter !== ' ')
-			span.classList.add('letter');
-		letterEls.push(span);
-		headingEl.appendChild(span);
-		}
-	});
-		</script>
 </head>
 
 
 <body>
-<nav class="navbar navbar-expand-lg bg-transparent">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
-	</button>
-
-	<img src="assets/fwglogo.png" width="50" height="50">
-	<div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
-		<ul class="navbar-nav mr-auto">
-			<li> </li>
-			<li class="nav-item active">
-				<a class="nav-link" href="#/">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="">Saison 2022/23</a>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Archiv</a>
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a class="nav-link" href="google.com">Saison 2021/22</a>
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color:#1a1a24">
+		<div class="container d-flex justify-content-between">			
+			<!--Left_Brand-->
+			<div class="p-2">
+					<a class="navbar-brand" href="#">
+						<img src="assets/fwglogo.png" height="38">
+						RoboFreaks
+					</a>
+			</div>
+			<div class="p-2">
+				<!--Middle-Items-->
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="nav nav-pills flex-column flex-sm-row">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#about">Über Uns</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="#team">Team</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="#competition">Wettbewerbe</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="#news">Blog</a>
+						</li>
+					</ul>
 				</div>
-			</li>
-		</ul>
-		<div class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Das sind wir </a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="https://www.instagram.com/robofreaks_fwg/">Instagram/RoboFreaks</a>
-				<a class="dropdown-item" href="https://github.com/RoboFreaksFWG">Github/RoboFreaks</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="https://frankenwald-gymnasium.de">FWG-Webseite</a>
-				<a class="dropdown-item" href="http://fwg-digital.de/startseite.html">FWG-Übertritt</a>
 			</div>
-		</div>
-		<div class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				Fll-Website</a>
-			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="https://www.first-lego-league.org/de/">Startseite De</a>
-				<a class="dropdown-item" href="https://firstlegoleague.org">Startseite En</a>
+			<!--Right-SocialMedia-->
+			<div class="p-2">
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav flex-row">
+						<li class="p-2"> <a class="link" href="https://www.instagram.com/robofreaks_fwg/" target="_blank"><img src="assets/instagram.svg" height="25"></a></li>
+						<li class="p-2"> <a class="link" href="https://github.com/RoboFreaksFWG" target="_blank"><img src="assets/github.svg" height="25"></a></li>
+						<li class="p-2"> <a class="link" href="https://www.first-lego-league.org/de/" target="_blank">FLL</a></li>
+						<li class="p-2"> <a class="link" href="https://www.frankenwald-gymnasium.de/" target="_blank">FWG</a></li>
+					</ul>
+				</div>	
 			</div>
+			<!--Collapse-Button-->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>		
 		</div>
+	</nav>
+
+
+	<!--Main-->
+	<div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 		
-		<!-- <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;">Platzhalter</button>	-->	
-	</div>
-</nav>
-
-<!-- -->
-<div class="heading">
-	<h1 class="title">RoboFreaks</h1>
-	<br /><br /><br />
-	<p class="subtitle">Servus! Wir sind die RoboFreaks vom Frankenwald Gymnasium Kronach. <br /> 
-		Wir sind ein Team aus 11 Personen. Jeden Freitag treffen wir uns als Robotik AG in der Physik unserer Schule, um dort zu bauen, programmieren und blödsinn zu treiben.  <br /> 
-		Seit 2017 nehmen wir an der First Lego League Teil.</p>
-	<!-- <a class="btn btn-primary btn-lg" href="#/" target="_blank" role="button">Download Gh Repo (not available rn)</a> --> 
-	<!--<a class="btn btn-secondary btn-lg" href="#/" target="_blank" role="button">submit issue/question (also not available)</a> --> 
-	<br /><br /><br /><br /><br /><br />
-</div>
-
-<div class="features">
-	<div class="title">First Lego League</div>
-	<div class="subtitle"> Die FLL ist ein Wettbewerb der sich aus den 4 Teilbereichen, 
-		Robot-Game, Forschung, Robotdesign und Grundwerte zusammenbaut. <br /> 
-		Die Ergebnisse aus diesen werden zusammengerechnet und das beste Team erhält den „Champion Pokal“. 
-		Genauere Informationen gibt es auf der Offiziellen FLL Seite.</div>
-	<!-- <div class="subtitle"> <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;" onClick="window.location.href='https://firstlegoleague.org/'">   </button> </div> -->   
-	<div class="cards">
-		<div class="card" style="width: 19rem;">
-		<div class="card-body">
-			<h5 class="card-title">Robot Game</h5>
-			<p class="card-text">Jedes Jahr gibt es ein neues Spielfeld mit Aufgaben aus LEGO, welches uns zugesendet wird.
-				Die Teams konstruieren, bauen und programmieren einen Roboter, sodass dieser möglichst viele Aufgaben autonom in 2:30 Minunten auf der Matte erledigt. </p>
-		</div>
-	</div>
-		<div class="card" style="width: 19rem;">
-			<div class="card-body">
-				<h5 class="card-title">Robot Design</h5>
-				<p class="card-text">Einer Jury muss innerhalb von 5 Minuten gezeigt werden, was unseren Roboter, dessen Module und Programmierung, 
-					sowie unsere Strategie so besonders und innovativ macht. Anschließend muss man noch den Fragen der Jury Rede und Antwort stehen. </p>
+		<!--About Section-->
+		<section id="about">
+			<div class="about">
+				<div class="container">
+					<h1 class="title">RoboFreaks</h1>
+					<p class="subtitle">Servus! Wir sind die RoboFreaks vom <a class="link" href="https://www.frankenwald-gymnasium.de/" target="_blank">Frankenwald Gymnasium Kronach</a>. <br> 
+					Wir sind ein Team aus 11 Schülern von der 7. bis zur 12. Klasse. 
+					Jeden Freitag (vor Wettbewerben auch häufiger) treffen wir uns als Robotik AG in der Physik unserer Schule. 
+					Dort bauen und programmieren wir an unseren Lego Robotern. Forschen, Experimentieren, Essen oder treiben blödsinn.   
+					</p>
+					<br/><br /><br />
+				</div>
 			</div>
-		</div>
-		<div class="card" style="width: 19rem;">
-			<div class="card-body">
-				<h5 class="card-title">Forschung</h5>
-				<p class="card-text">Jedes Jahr gibt es ein neues, global relevantes Thema, zu dem die Teams wissenschaftlich arbeiten sollen. 
-					Es selbstständig eine passende Problemstellung gefunden werden und anschließend eine innovative Lösungsidee gefunden werden. </p>
-			</div>
-		</div>
-		<div class="card" style="width: 19rem;">
-			<div class="card-body">
-				<h5 class="card-title">Grundwerte</h5>
-				<p class="card-text">Bei den Vorträgen zur Forschung und zum Roboterdesign beobachtet die Jury außerdem das Team selbst. Für die FLL sind Grundwerte wie Entdeckung, Innovation, Wirkung, Inklusion, Teamwork und Spaß ein wichtiger Aspekt des Bildungsprogramms. </p>
-			</div>
-		</div>
-	</div>
-</div>
+		</section>
 
-<div class="statistics">
-	<div class="title">Das Team</div>
+		<!--Team Section-->
+		<section id="team">
+			<div class="team">
+				<div class="container">
+					<h2 class="title">Team</h2>
+					<div class="row">
+						<div class="col">
+							<div class="card mb-4">
+									<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 1">
+									<div class="card-body">
+										<hr>
+										<h5 class="card-title">Konrad</h5>
+										<p class="card-text">Hacker</p>
+									</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 2">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Danis</h5>
+									<p class="card-text">Eiskalt</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Jona&shythan</h5>
+									<p class="card-text">Der Bessere</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Lovis</h5>
+									<p class="card-text">Ex Sales Manager</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Jana</h5>
+									<p class="card-text">Fancy</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Anton</h5>
+									<p class="card-text">Läufer</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Jona&shythan</h5>
+									<p class="card-text">Immer hungirg</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Fabian</h5>
+									<p class="card-text">Überarbeitet</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Till</h5>
+									<p class="card-text">Co Coach</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Nico</h5>
+									<p class="card-text">Veteran</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Chris&shytian</h5>
+									<p class="card-text">Schinken Coach</p>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4">
+								<img src="assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h5 class="card-title">Armin</h5>
+									<p class="card-text">Kameramann</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="statistics">
+				<div class="container">
+					<div class="cards d-flex justify-content-center">
+						<div class="card statistic" style="width: 18rem;">
+							<div class="card-body">
+								<p class="card-title">8</h1>
+								<p class="card-text">Fll Wettbewerbe</p>
+							</div>
+						</div>
+						<div class="card statistic" style="width: 18rem;">
+							<div class="card-body">
+								<p class="card-title">16980</h1>
+								<p class="card-text">Lego Teile</p>
+							</div>
+						</div>
+						<div class="card statistic" style="width: 18rem;">
+							<div class="card-body">
+								<p class="card-title">234</h1>
+								<p class="card-text">Döner gegessen</p>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</section>
 	
-	<!-- Hier soll das Team gezeigt werden. Ähnlich wie bei Mindfactory: http://jufotec.ch/teammindfactory/-->
-	<div class="subtitle">Teilnehmer</div>
-	<div  class="subtitle">Coaches</div>
-	<br /><br />
-	<div class="cards">
-		<div class="card statistic" style="width: 18rem;">
-			<div class="card-body">
-				<p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">vielleicht 8</h1>
-				<p style="font-weight: bold !important;font-size: 20px !important;">Fll Wettbewerbe</p>
+		<!--Competition Section-->
+		<section id="competition">
+			<div class="competition">
+				<div class="container">
+					<h2 class="text-uppercase">First Lego League</h2>
+					<p class="subtitle">Als Team nehmen wir jedes Jahr an der <a href="https://www.first-lego-league.org/de/" class="link">First Lego Leage</a> Teil.
+										Das ist ein Wettbewerb für 9-16 jährige, der weltweit ausgetragen wird. 
+										An unserer Schule kann man ab der 7. Klasse in das Wettkampf Team kommen. <br>
+										Die FLL besteht aus den 4 Teilbereichen Robot Game, Robot Design, Forschung und den Grundwerten. Man muss sich auf alle 4 vorbereiten und am Wettkapftag zeigen, was man erarbeitet hat.
+										Das Team das ingesamt am besten abschneidet wird als Gesamtsieger (Champion) gekürt.
+					</p>
+				</div>
+				<div class="container-fluid">
+					<div class="card-deck d-flex flex-wrap justify-content-center">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Robot Game</h5>
+								<p class="card-text">Jedes Jahr gibt es ein neues Spielfeld mit Aufgaben aus LEGO, welches uns zugesendet wird.
+								Die Teams konstruieren, bauen und programmieren einen Roboter, sodass dieser möglichst viele Aufgaben autonom in 2:30 Minunten auf der Matte erledigt. </p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Robot Design</h5>
+								<p class="card-text">Einer Jury muss innerhalb von 5 Minuten gezeigt werden, was unseren Roboter, dessen Module und Programmierung, 
+									sowie unsere Strategie so besonders und innovativ macht. Anschließend muss man noch den Fragen der Jury Rede und Antwort stehen. </p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Forschung</h5>
+								<p class="card-text">Jedes Jahr gibt es ein neues, global relevantes Thema, zu dem die Teams wissenschaftlich arbeiten sollen. 
+									Es selbstständig eine passende Problemstellung gefunden werden und anschließend eine innovative Lösungsidee gefunden werden. </p>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Grundwerte</h5>
+								<p class="card-text">Bei den Vorträgen zur Forschung und zum Roboterdesign beobachtet die Jury außerdem das Team selbst. Für die FLL sind Grundwerte wie Entdeckung, Innovation, Wirkung, Inklusion, Teamwork und Spaß ein wichtiger Aspekt des Bildungsprogramms. </p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="card statistic" style="width: 18rem;">
-			<div class="card-body">
-				<p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">16980</h1>
-				<p style="font-weight: bold !important;font-size: 20px !important;">Lego Teile</p>
-			</div>
-		</div>
-		<div class="card statistic" style="width: 18rem;">
-			<div class="card-body">
-				<p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">174</h1>
-				<p style="font-weight: bold !important;font-size: 20px !important;">Döner gegessen</p>
-			</div>
-		</div>
-	</div>
-</div>
+		</section>
 
-<div class="page_end">
-	<div class="start">
-		<div class="card">
-			<div class="card-body gs-card">
-				<div class="title">Dc - Bot</div>
-				<div class="subtitle">Invite the RoboFreaks discord bot.</div>
-				<br />
-				<a class="btn btn-primary btn-lg" href="https://discord.com/api/oauth2/authorize?client_id=1096337347613827124&permissions=8&scope=bot%20applications.commands" role="button">RoboFreaks Bot</a>
-			</div><br />
-		</div>
+
+		<!--News Section-->
+		<section id="news">
+			<div class="news">
+				<div class="container">
+					<h2 class="title">News</h2>
+				</div>
+			</div>
+			<div class="archiv">
+				<div class="container">
+					<h2 class="title">Archiv</h2>
+				</div>
+			</div>
+		</section>
+	<!--Main-->
 	</div>
-	<div class="footer">
-		<div class="bot-footer">
-			<img src="assets/fwglogo.png" width="150"><br />
-			Copyright © @Rootqit - 2023
-		</div><br/>
-		<div class="Rootqit">website designed by <a href="https://github.com/8Root"> Rootqit</a></div>
-	</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/now-ui-kit.min.js"></script>
+	
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
