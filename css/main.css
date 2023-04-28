@@ -61,8 +61,6 @@ body {
 	padding-top: 8rem !important;
 }
 .team .card {
-	width: 10vw !important;
-	min-width: 150px;
 	background-color: transparent;
 	color: white;
 	border: transparent;
@@ -70,6 +68,10 @@ body {
 }
 .team .card-body{
 	padding-top: 0px;
+	width: 9rem;
+}
+.team .card-title{
+	font-size: 25px;
 }
 .team .card-text{
 	hyphens: auto;
@@ -100,7 +102,7 @@ body {
 }
 .statistics .card-body{
 	height: 280 !important;
-	width: 332 !important;
+	width: 16rem !important;
 	max-height: 280 !important;
 	max-width: 332 !important;
 }
