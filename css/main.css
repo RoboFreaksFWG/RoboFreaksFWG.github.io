@@ -154,8 +154,6 @@ body {
 	font-size: 28px !important;
 	font-weight: 600 !important;
 	text-align: left !important;
-}
-.competition .card-title {
 	margin: 0 0 -3px !important;
 }
 .competition .card-text{
@@ -171,5 +169,18 @@ body {
 
 .news{
 	padding-top: 8rem !important;
-	padding-bottom: 10rem;
+}
+.news .subtitle{
+	text-align: left;
+	font-size: 28px;
+}
+.news .text{
+	text-align: left;
+	min-width: 40vw;
+}
+/*-------------------------------------
+				archiv	 
+-------------------------------------*/
+.archiv{
+	padding-top: 8rem !important;
 }
