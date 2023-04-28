@@ -58,7 +58,7 @@ body {
 				 team 
 -------------------------------------*/
 .team{
-	padding-top: 5rem !important;
+	padding-top: 8rem !important;
 }
 .team .card {
 	width: 10vw !important;
@@ -99,7 +99,6 @@ body {
 	border-color: transparent;
 }
 .statistics .card-body{
-	padding: 0 !important;
 	height: 280 !important;
 	width: 332 !important;
 	max-height: 280 !important;
