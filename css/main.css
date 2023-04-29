@@ -194,6 +194,11 @@ h4{
 	max-width: 40vw;
 	margin-right: 2rem;
 }
+@media (max-width:960px){
+	.news .text{
+		max-width: 100%;
+	}
+}
 /*-------------------------------------
 				archiv	 
 -------------------------------------*/
