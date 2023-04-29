@@ -177,10 +177,21 @@ body {
 .news .text{
 	text-align: left;
 	min-width: 40vw;
+	margin-right: 2rem;
 }
 /*-------------------------------------
 				archiv	 
 -------------------------------------*/
 .archiv{
 	padding-top: 8rem !important;
+}
+.archiv h3{
+	font-size: 40px !important;
+}
+.archiv .tab-content{
+	padding-top: 2rem;
+}
+.archiv .text{
+	text-align: left;
+	min-width: 40vw;
 }
