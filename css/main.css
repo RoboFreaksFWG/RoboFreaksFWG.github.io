@@ -191,7 +191,7 @@ h4{
 }
 .news .text{
 	text-align: left;
-	min-width: 40vw;
+	max-width: 40vw;
 	margin-right: 2rem;
 }
 /*-------------------------------------
