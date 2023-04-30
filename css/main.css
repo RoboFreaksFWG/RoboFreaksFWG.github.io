@@ -191,12 +191,14 @@ h4{
 }
 .news .text{
 	text-align: left;
-	max-width: 40vw;
+	min-width: 40vw;
+	width: 40vw;
 	margin-right: 2rem;
+	hyphens: auto;
 }
-@media (max-width:960px){
+@media (max-width:991px){
 	.news .text{
-		max-width: 100%;
+		width: auto;
 	}
 }
 /*-------------------------------------
@@ -208,19 +210,37 @@ h4{
 .archiv .tab-content{
 	padding-top: 2rem;
 }
-.archiv .text{
-	text-align: left;
-	min-width: 40vw;
-}
 .archiv .logo{
 	height: 40px;
 }
 .archiv .subtitle{
-	padding-top: 2rem;
-	text-align: left;
+	padding-top: 7rem;
 }
-.news .text{
+.archiv .content{
+	padding-top: 1.5rem;
+}
+.archiv .text{
 	text-align: left;
 	min-width: 40vw;
+	width: 40vw;
 	margin-right: 2rem;
+	hyphens: auto;
+}
+.archiv .text-right{
+	font-size: 18px;
+	text-align: left;
+	min-width: 40vw;
+	width: 40vw;
+	margin-left: 2rem;
+	hyphens: auto;
+}
+@media (max-width:991px){
+	.archiv .text{
+		width: auto;
+	}
+	.archiv .text-right{
+		width: auto;
+		margin-left: auto;
+		margin-right: 2rem;
+	}
 }
