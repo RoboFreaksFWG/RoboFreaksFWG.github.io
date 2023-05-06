@@ -166,18 +166,17 @@ h4{
 .competition .text .link{
 	color: rgba(220, 220, 220, 0.87);
 }
+.competition .card-deck{
+	gap: .7rem;
+}
 .competition .card{
 	width: 19rem;
 	padding: 0;
 	background-color: #1D1E28 !important;
-	margin: .6rem;
 	border-radius: 20px !important;
 	box-shadow:none !important;
 	border-color: #237841;
 	border-width: 0.3rem;
-}
-.competition .card-body{
-	padding: 1.5rem;
 }
 .competition .card-title{
 	color: #237841;
