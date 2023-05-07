@@ -18,27 +18,30 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 	border-top: 6px #237841 solid ;
-	font-size: 18px;
+	font-size: 1rem;
 	position: relative ;
 }
 .title{
-	font-size: 80px;
+	font-size: 5rem;
 	padding-bottom: 2rem;
 }
-.text{
-	font-size: 18px;
-}
 .subtitle{
-	font-size: 28px;
+	font-size: 1.5rem;
 }
 h2{
-	font-size: 80px;
+	font-size: 5rem;
 }
 h3{
-	font-size: 50px;
+	font-size: 2.5rem;
 }
 h4{
-	font-size: 28px;
+	font-size: 1.5rem;
+}
+
+@media (max-width:991px){
+	.title{
+		font-size: 3rem;
+	}
 }
 .link{
 	color: white;
@@ -87,7 +90,11 @@ h4{
 	font-size: 10vw;
 	font-weight:bold;
 }
-
+@media (max-width:500px){
+	.about .title{
+		font-size: 13vw;
+	}
+}
 
 /*-------------------------------------
 				 team 
