@@ -156,12 +156,9 @@ h4{
 	box-shadow: none !important;
 	color: #ffffff !important;
 	border-color: transparent;
+	width: 10.5rem;
 }
-.statistics .card-body{
-	height: 280 !important;
-	max-height: 280 !important;
-	max-width: 332 !important;
-}
+
 .statistics .card-title{
 	color: #237841 !important;
 	line-height: 15px !important;
