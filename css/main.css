@@ -102,24 +102,26 @@ h4{
 .team{
 	padding-top: 8rem !important;
 }
+.team .card-deck{
+	gap: 10px;
+}
 .team .card {
 	background-color: transparent;
 	color: white;
 	border: transparent;
 	box-shadow: none;
+	width: 9.3rem;
 }
 .team .card-body{
-	padding-top: 0px;
-	width: 9rem;
+	padding: 0;
 }
 .team .card-text{
 	hyphens: auto;
+	margin-bottom: 10px;
 }
 .team hr{
-	margin: 0rem;
-	padding-bottom: 0.4rem;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
+	margin: 10px 30px;
+
 }
 
 /*-------------------------------------
@@ -133,6 +135,9 @@ h4{
 	background-size: 300% !important;
 	background-repeat: no-repeat !important;
 }
+.statistics .card-deck{
+	gap: 30px;
+}
 .statistics .card{
 	background: transparent !important;
 	box-shadow: none !important;
@@ -141,7 +146,6 @@ h4{
 }
 .statistics .card-body{
 	height: 280 !important;
-	width: 16rem !important;
 	max-height: 280 !important;
 	max-width: 332 !important;
 }
@@ -210,12 +214,11 @@ h4{
 }
 .news .text{
 	text-align: left;
-	min-width: 40vw;
-	width: 40vw;
+	width: 30rem;
 	margin-right: 2rem;
 	hyphens: auto;
 }
-@media (max-width:991px){
+@media (max-width:1199px){
 	.news .text{
 		width: auto;
 	}
@@ -236,7 +239,7 @@ h4{
 	padding-top: 7rem;
 }
 .archiv .content{
-	padding-top: 1.5rem;
+	padding-top: 3rem;
 }
 .archiv .text{
 	text-align: left;
@@ -246,14 +249,13 @@ h4{
 	hyphens: auto;
 }
 .archiv .text-right{
-	font-size: 18px;
 	text-align: left;
 	min-width: 40vw;
 	width: 40vw;
 	margin-left: 2rem;
 	hyphens: auto;
 }
-@media (max-width:991px){
+@media (max-width:1199px){
 	.archiv .text{
 		width: auto;
 	}
