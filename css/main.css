@@ -62,6 +62,24 @@ h4{
 
 
 /*-------------------------------------
+			backgrounds	 	
+-------------------------------------*/
+.spacer{
+	aspect-ratio: 960/200;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+.green-top{
+	background-image: url('/assets/backgrounds/wave-green-top.svg') !important;
+}
+.green-bottom{
+	background-image: url('/assets/backgrounds/wave-green-bottom.svg') !important;
+}
+
+
+/*-------------------------------------
 				 Navbar 
 -------------------------------------*/
 .nav-link {
@@ -129,11 +147,6 @@ h4{
 -------------------------------------*/
 .statistics{
 	padding-top: 5rem !important;
-	padding-bottom: 14rem;
-	background-image: url("/assets/wavy-green.svg") !important;
-	background-position: bottom !important;
-	background-size: 300% !important;
-	background-repeat: no-repeat !important;
 }
 .statistics .card-deck{
 	gap: 30px;
@@ -163,12 +176,8 @@ h4{
 -------------------------------------*/
 
 .competition{
-	padding-top: 2rem !important;
-	padding-bottom: 5rem;
 	background: #237841 !important;
-	background-image: url("/assets/wavy-dark.svg") !important;
 	background-position:bottom !important;
-	background-size: 200% !important;
 	background-repeat: no-repeat !important;
 }
 .competition .text{
@@ -206,9 +215,6 @@ h4{
 				news	 
 -------------------------------------*/
 
-.news{
-	padding-top: 8rem !important;
-}
 .news .subtitle{
 	text-align: left;
 }
