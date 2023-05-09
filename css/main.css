@@ -17,7 +17,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
-	border-top: 6px #237841 solid ;
+	/* border-top: 6px #237841 solid ; */
 	font-size: 1rem;
 	position: relative ;
 }
@@ -82,6 +82,7 @@ h4{
 /*-------------------------------------
 				 Navbar 
 -------------------------------------*/
+
 .nav-link {
 	color: white !important;
 	font-family: Lato, sans-serif !important;
@@ -93,6 +94,7 @@ h4{
 }
 .navbar-collapse{
 	transition: all .4s;
+	
 }
 .navbar-toggler:focus{
 	box-shadow: none;
@@ -268,3 +270,8 @@ h4{
 		margin-right: 2rem;
 	}
 }
+@media (max-width: 600px) {
+	.navbar-collapse{
+		float: left
+	}
+  }
