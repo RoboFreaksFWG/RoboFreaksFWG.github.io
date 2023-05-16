@@ -1,7 +1,6 @@
 /*-------------------------------------
 			Counting Numbers 
 -------------------------------------*/
-
 class CountUp {
 	constructor(triggerEl, counterEl, startOn) {
 	const counter = document.querySelector(counterEl)
@@ -44,6 +43,11 @@ new CountUp('#start1', '#count-fll', 0)
 new CountUp('#start1', '#count-lego', 14500)
 new CountUp('#start1', '#count-döner', 0)
 
+
 /*-------------------------------------
-			
+				tooltips			
 -------------------------------------*/
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
