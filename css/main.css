@@ -97,6 +97,11 @@ h4{
 .navbar-toggler:focus{
 	box-shadow: none;
 }
+@media (max-width:991px){
+	.nav .nav-link{
+		text-align: left !important;
+	}
+}
 /*-------------------------------------
 				 about 
 -------------------------------------*/
