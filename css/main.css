@@ -24,6 +24,7 @@ body {
 .title{
 	font-size: 5rem;
 	padding-bottom: 2rem;
+	color: #ffffff;
 }
 .subtitle{
 	font-size: 1.5rem;
@@ -37,15 +38,22 @@ h3{
 h4{
 	font-size: 1.5rem;
 }
+.link{
+	color: rgba(220, 220, 220, 0.87);
+}
+.text{
+	color: rgba(220, 220, 220, 0.87);
+}
+.text-right{
+	color: rgba(220, 220, 220, 0.87);
+}
 
 @media (max-width:991px){
 	.title{
 		font-size: 3rem;
 	}
 }
-.link{
-	color: white;
-}
+
 .video{
 	position: relative;
 	width: 100%;
@@ -60,6 +68,15 @@ h4{
 	height: 100%;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1a24;
+    text-align: center;
+    padding: 10px 0;
+}
 
 /*-------------------------------------
 			backgrounds	 	
@@ -243,6 +260,7 @@ h4{
 .archiv{
 	padding-top: 8rem !important;
 }
+
 .archiv .tab-content{
 	padding-top: 2rem;
 }
@@ -250,7 +268,8 @@ h4{
 	height: 40px;
 }
 .archiv .subtitle{
-	padding-top: 7rem;
+	padding-top: 6rem;
+	text-align: left;
 }
 .archiv .content{
 	padding-top: 3rem;
