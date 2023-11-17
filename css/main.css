@@ -21,38 +21,6 @@ body {
 	font-size: 1rem;
 	position: relative ;
 }
-.title{
-	font-size: 5rem;
-	padding-bottom: 2rem;
-	color: #ffffff;
-}
-.subtitle{
-	font-size: 1.5rem;
-}
-h2{
-	font-size: 5rem;
-}
-h3{
-	font-size: 2.5rem;
-}
-h4{
-	font-size: 1.5rem;
-}
-.link{
-	color: rgba(220, 220, 220, 0.87);
-}
-.text{
-	color: rgba(220, 220, 220, 0.87);
-}
-.text-right{
-	color: rgba(220, 220, 220, 0.87);
-}
-
-@media (max-width:991px){
-	.title{
-		font-size: 3rem;
-	}
-}
 
 .video{
 	position: relative;
@@ -77,6 +45,46 @@ h4{
     text-align: center;
     padding: 10px 0;
 }
+
+/*----------- font-sizes ----------*/
+.text{
+	font-size: 1rem;
+	color: rgba(220, 220, 220, 0.87);
+}
+.title{
+	font-size: 5rem;
+	padding-bottom: 2rem;
+}
+.subtitle{
+	font-size: 1.5rem;
+}
+h2{
+	font-size: 5rem;
+}
+h3{
+	font-size: 2.5rem;
+}
+h4{
+	font-size: 1.5rem;
+}
+
+@media (max-width:991px){
+	.title{
+		font-size: 3rem;
+	}
+}
+
+/*---------- font-colors -----------*/
+.white{
+	color: white !important;
+}
+.green{
+	color: #237841 !important;
+}
+.grey{
+	color: rgba(220, 220, 220, 0.87) !important;
+}
+
 
 /*-------------------------------------
 			backgrounds	 	
@@ -140,6 +148,11 @@ h4{
 	}
 	.about .text{
 		padding: 0 0;
+	}
+}
+@media (min-width: 2000px){
+	.about .title{
+		font-size: 200px !important;
 	}
 }
 
@@ -213,11 +226,7 @@ h4{
 	background-repeat: no-repeat !important;
 }
 .competition .text{
-	color: rgba(220, 220, 220, 0.87);
 	padding: 0 7rem;
-}
-.competition .text .link{
-	color: rgba(220, 220, 220, 0.87);
 }
 @media (max-width:500px){
 	.competition .text{
@@ -246,7 +255,6 @@ h4{
 .competition .card-text{
 	hyphens: auto;
 	text-align: left !important;
-	color: rgba(220, 220, 220, 0.80);
 }
 
 
@@ -299,7 +307,7 @@ h4{
 	margin-right: 2rem;
 	hyphens: auto;
 }
-.archiv .text-right{
+.archiv .right{
 	text-align: left;
 	min-width: 40vw;
 	width: 40vw;
@@ -310,7 +318,7 @@ h4{
 	.archiv .text{
 		width: auto;
 	}
-	.archiv .text-right{
+	.archiv .right{
 		width: auto;
 		margin-left: auto;
 		margin-right: 2rem;
