@@ -124,15 +124,22 @@ h4{
 -------------------------------------*/
 .about{
 	padding-top: 10rem !important;
+	padding-bottom: 3rem;
 	color: #fff !important;
 }
 .about .title {
 	font-size: 10vw;
 	font-weight:bold;
 }
+.about .text{
+	padding: 0 7rem;
+}
 @media (max-width:500px){
 	.about .title{
 		font-size: 13vw;
+	}
+	.about .text{
+		padding: 0 0;
 	}
 }
 
