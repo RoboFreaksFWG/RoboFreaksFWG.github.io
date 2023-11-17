@@ -214,10 +214,17 @@ h4{
 }
 .competition .text{
 	color: rgba(220, 220, 220, 0.87);
+	padding: 0 7rem;
 }
 .competition .text .link{
 	color: rgba(220, 220, 220, 0.87);
 }
+@media (max-width:500px){
+	.competition .text{
+		padding: 0 0 !important;
+	}
+}
+
 .competition .card-deck{
 	gap: .7rem;
 }
@@ -280,6 +287,10 @@ h4{
 }
 .archiv .content{
 	padding-top: 3rem;
+}
+.archiv .white{
+	color: white;
+	margin: 0;
 }
 .archiv .text{
 	text-align: left;
