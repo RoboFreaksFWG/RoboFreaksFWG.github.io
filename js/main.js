@@ -9,7 +9,7 @@ window.addEventListener("scroll", function() {
 
     if (currentScroll > lastScrollTop) {
         // Nach unten scrollen
-        navbar.style.top = "-55px"; // oder eine andere Höhe entsprechend Ihrer Navbar
+        navbar.style.top = "-60px"; // oder eine andere Höhe entsprechend Ihrer Navbar
     } else {
         // Nach oben scrollen
         navbar.style.top = "0";
