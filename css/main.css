@@ -32,7 +32,7 @@ footer {
 	border-top: 6px #237841 solid ;
 	font-size: 1rem;
 	position: relative ;
-	margin-top: 3rem;
+	margin-top: 5rem;
 }
 
 
@@ -368,7 +368,4 @@ h4{
 .footer{
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-}
-.footer.text{
-	padding: 0 0 0;
 }
