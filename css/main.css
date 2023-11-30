@@ -121,6 +121,9 @@ h4{
 /*-------------------------------------
 				 Navbar 
 -------------------------------------*/
+.navbar {
+    transition: top .4s;
+}
 .navbar-brand{
 	font-family: 'Chakra Petch', sans-serif;
 }

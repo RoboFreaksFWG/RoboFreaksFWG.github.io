@@ -1,4 +1,26 @@
 /*-------------------------------------
+				Navbar			
+-------------------------------------*/
+let lastScrollTop = 0;
+navbar = document.getElementsByClassName("navbar")[0];
+
+window.addEventListener("scroll", function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        // Nach unten scrollen
+        navbar.style.top = "-60px"; // oder eine andere Höhe entsprechend Ihrer Navbar
+    } else {
+        // Nach oben scrollen
+        navbar.style.top = "0";
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Für negative Scrolling-Werte
+}, false);
+
+
+
+/*-------------------------------------
 			Counting Numbers 
 -------------------------------------*/
 class CountUp {
