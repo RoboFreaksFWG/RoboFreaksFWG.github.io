@@ -184,7 +184,12 @@ h4{
 	padding-top: 8rem !important;
 }
 .team .card-deck{
-	gap: 10px;
+	gap: 60px;
+}
+@media (max-width:500px){
+	.team .card-deck{
+		gap: 20px;
+	}
 }
 .team .card {
 	background-color: transparent;
@@ -210,6 +215,13 @@ h4{
 	margin-right: 30px;
 	margin-bottom: 5px;
 }
+.team img {
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7); /* Schatten für einen 3D-Effekt */
+	margin-bottom: 10px;
+}
+
 
 /*-------------------------------------
 				 stats 
@@ -346,7 +358,10 @@ h4{
 		order: -1;
 	}
 }
-
+.archiv img{
+	aspect-ratio: 16/9;
+	object-fit: cover;
+}
 
 /*-------------------------------------
 				 impressum 
