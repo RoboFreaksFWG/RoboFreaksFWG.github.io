@@ -18,6 +18,27 @@ window.addEventListener("scroll", function() {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Für negative Scrolling-Werte
 }, false);
 
+/*-------------------------------------
+			Type Writer 
+-------------------------------------*/
+function typeWriter(elementId, text, speed) {
+    let i = 0;
+    let element = document.getElementById(elementId);
+
+    function typing() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, speed);
+        }
+    }
+
+    typing();
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    typeWriter("typed-text", "RoboFreaks", 150); // Geschwindigkeit in Millisekunden
+});
 
 
 /*-------------------------------------
