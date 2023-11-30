@@ -21,6 +21,20 @@ body {
 	font-size: 1rem;
 	position: relative ;
 }
+footer {
+	font-family: 'Poppins', sans-serif;
+	text-align: left;
+	background-color: #1a1a24;
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	border-top: 6px #237841 solid ;
+	font-size: 1rem;
+	position: relative ;
+	margin-top: 3rem;
+}
+
 
 .video{
 	position: relative;
@@ -36,7 +50,7 @@ body {
 	height: 100%;
 }
 
-.footer {
+.message {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -324,4 +338,30 @@ h4{
 		margin-right: 2rem;
 		order: -1;
 	}
+}
+
+
+/*-------------------------------------
+				 impressum 
+-------------------------------------*/
+.impressum{
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	color: #fff !important;
+	text-align: left;
+}
+.impressum .subtitle{
+	padding-top: 3rem;
+}
+
+
+/*-------------------------------------
+				 footer 
+-------------------------------------*/
+.footer{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.footer.text{
+	padding: 0 0 0;
 }

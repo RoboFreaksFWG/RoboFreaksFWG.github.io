@@ -1,669 +1,703 @@
 <!DOCTYPE html>
 <html lang="de">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/main.css"> 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/main.css"> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap">
 
-	<link rel="shortcut icon" type="../image/png" href="../assets/fwglogo.png">
-	<title>RoboFreaks</title>
-</head>
+		<link rel="shortcut icon" type="../image/png" href="../assets/fwglogo.png">
+		<title>RoboFreaks</title>
+	</head>
 
 
-<body>
-	<!--Navbar-->
-	<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color:#1a1a24">
-		<div class="container d-flex justify-content-between">			
-			<!--Left_Brand-->
-			<div>
-					<a class="navbar-brand" href="#">
-						<img src="../assets/fwglogo.png" height="38">
-						RoboFreaks
-					</a>
-			</div>
-			<!--Middle-Items-->
-			<div>
-				<div class="collapse navbar-collapse" id="navbarContent">
-					<ul class="nav flex-column flex-sm-row">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#about">Über Uns</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="#team">Team</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="#competition">Wettbewerbe</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="#news">Blog</a>
-						</li>
-					</ul>
+	<body>
+		<!--Navbar-->
+		<nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color:#1a1a24">
+			<div class="container d-flex justify-content-between">			
+				<!--Left_Brand-->
+				<div>
+						<a class="navbar-brand" href="index.html">
+							<img src="../assets/fwglogo.png" height="38">
+							RoboFreaks
+						</a>
 				</div>
-			</div>
-			<!--Right-SocialMedia-->
-			<div>
-				<div class="collapse navbar-collapse" id="navbarContent">
-					<ul class="navbar-nav flex-row">
-						<li class="p-2"> <a class="link" href="https://www.instagram.com/robofreaks_fwg/" target="_blank"><img src="../assets/instagram.svg" height="25"></a></li>
-						<li class="p-2"> <a class="link" href="https://github.com/RoboFreaksFWG" target="_blank"><img src="../assets/github.svg" height="25"></a></li>
-						<li class="p-2"> <a class="link" href="https://www.first-lego-league.org/de/" target="_blank"><img src="../assets/firstlogo.png" height="25"></a></li>
-						<li class="p-2"> <a class="link white" href="https://www.frankenwald-gymnasium.de/" target="_blank">FWG</a></li>
-					</ul>
-				</div>	
-			</div>
-			<!--Collapse-Button-->
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>		
-		</div>
-	</nav>
-
-
-	<!--Main-->
-	<div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-		
-		<!--About Section-->
-		<section id="about">
-			<div class="about">
-				<div class="container">
-					<h1 class="title">Robo&shyFreaks</h1>
-					<p class="text">
-					Servus! Wir sind die RoboFreaks vom <a class="link grey" href="https://www.frankenwald-gymnasium.de/" target="_blank">Frankenwald Gymnasium Kronach</a>. <br> 
-					Wir sind ein Team aus 14 Schülern von der 7. bis zur 12. Klasse. 
-					Jeden Freitag (vor Wettbewerben auch häufiger) treffen wir uns als Robotik AG in unserer Schule. 
-					Dort bauen und programmieren wir an unseren Lego Robotern, forschen, experimentieren, essen oder treiben Blödsinn.   
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<!--Team Section-->
-		<section id="team">
-			<div class="team">
-				<div class="container">
-					<h2 class="title">Team</h2>
-					<div class="card-deck d-flex flex-wrap justify-content-center">
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 1">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Konrad</h4>
-								<p class="card-text">Hacker</p>
-								
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 2">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Danis</h4>
-								<p class="card-text">Eiskalt</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Jona&shythan</h4>
-								<p class="card-text">Der Bessere</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 5">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Jana</h4>
-								<p class="card-text">Fancy</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Anton</h4>
-								<p class="card-text">Läufer</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Moritz</h4>
-								<p class="card-text"></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Benedikt</h4>
-								<p class="card-text"></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Philipp</h4>
-								<p class="card-text"></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">David</h4>
-								<p class="card-text"></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Jona&shythan</h4>
-								<p class="card-text"></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Noah</h4>
-								<p class="card-text"></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Luca</h4>
-								<p class="card-text"></p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 7">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Jona&shythan</h4>
-								<p class="card-text">immer hungrig</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 8">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Fabian</h4>
-								<p class="card-text">überarbeitet</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Till</h4>
-								<p class="card-text">Co Coach</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Nico</h4>
-								<p class="card-text">Veteran</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Chris&shytian</h4>
-								<p class="card-text">Schinken Coach</p>
-							</div>
-						</div>
-						<div class="card">
-							<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
-							<div class="card-body">
-								<hr>
-								<h4 class="card-title">Armin</h4>
-								<p class="card-text">Kameramann</p>
-							</div>
-						</div>
+				<!--Middle-Items-->
+				<div>
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="nav flex-column flex-sm-row">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#about">Über Uns</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="#team">Team</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="#competition">Wettbewerbe</a>
+							</li>
+							<li class="nav-item ">
+								<a class="nav-link" href="#news">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="impressum.html">Impressum</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</div>
-			
-			<div class="statistics">
-				<div class="container">
-					<div class="card-deck d-flex flex-wrap justify-content-evenly" id="start1">
-						<div class="card">
-							<div class="card-body" data-bs-toggle="tooltip" data-bs-placement="bottom" 
-							title="Seit 2016 nehmen wir jährlich an der FLL Teil.">
-								<h3 class="card-title" id="count-fll" data-stop="8" data-speed="400">0</h3>
-								<p class="card-text">Fll Wettbewerbe</p>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-body" data-bs-toggle="tooltip" data-bs-placement="bottom" 
-							title="Unserer Inventur zufolge haben wir 15315 Lego Teile. Ja, wir haben eine Excel Liste dafür.">
-								<h3 class="card-title" id="count-lego" data-stop="15315">0</h3>
-								<p class="card-text">Lego Teile</p>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-body" data-bs-toggle="tooltip" data-bs-placement="bottom" 
-							title="Wenn es schnell gehen muss, wird Döner in der Schwedenstraße geholt. Teilweise auch zweimal.">
-								<h3 class="card-title" id="count-döner" data-stop="234" data-speed="15">0</h3>
-								<p class="card-text">Döner gegessen</p>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>	
-		</section>
-	
-		<div class="spacer green-top"></div>
-
-		<!--Competition Section-->
-		<section id="competition">
-			<div class="competition">
-				<div class="container">
-					<h2 class="title">First Lego League</h2>
-					<p class="text">
-						Als Team nehmen wir jedes Jahr an der <a href="https://www.first-lego-league.org/de/" target="_blank" class="link grey">First Lego League</a> teil.
-						Das ist ein Wettbewerb für 9-16-jährige, der weltweit ausgetragen wird. 
-						An unserer Schule kann man ab der 7. Klasse in das Wettkampfteam kommen. <br>
-						Die FLL besteht aus den 4 Teilbereichen Robot Game, Robot Design, Forschung und den Grundwerten. 
-						Man muss sich auf alle vier vorbereiten und am Wettkampftag zeigen, was man erarbeitet hat.
-						Das Team, das insgesamt am besten abschneidet, wird als Gesamtsieger (Champion) gekürt.
-					</p>
+				<!--Right-SocialMedia-->
+				<div>
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="navbar-nav flex-row">
+							<li class="p-2"> <a class="link" href="https://www.instagram.com/robofreaks_fwg/" target="_blank"><img src="../assets/instagram.svg" height="25"></a></li>
+							<li class="p-2"> <a class="link" href="https://github.com/RoboFreaksFWG" target="_blank"><img src="../assets/github.svg" height="25"></a></li>
+							<li class="p-2"> <a class="link" href="https://www.first-lego-league.org/de/" target="_blank"><img src="../assets/firstlogo.png" height="25"></a></li>
+							<li class="p-2"> <a class="link white" href="https://www.frankenwald-gymnasium.de/" target="_blank">FWG</a></li>
+						</ul>
+					</div>	
 				</div>
-				<div class="container-fluid">
-					<div class="card-deck d-flex flex-wrap justify-content-center">
-						<div class="card">
-							<div class="card-body">
-								<h4 class="card-title">Robot Game</h4>
-								<p class="card-text grey">
-									Jedes Jahr gibt es ein neues Spielfeld mit Aufgaben aus LEGO, welches uns zugesendet wird.
-									Die Teams konstruieren, bauen und programmieren einen Roboter,
-									sodass dieser möglichst viele Aufgaben autonom in 2:30 Minuten auf der Matte erledigt. 
-								</p>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<h4 class="card-title">Robot Design</h4>
-								<p class="card-text grey">
-									Einer Jury muss innerhalb von 5 Minuten gezeigt werden, was unseren Roboter, dessen Module und Programmierung									sowie unsere Strategie so besonders und innovativ macht. 
-									Anschließend muss man noch den Fragen der Jury Rede und Antwort stehen. 
-								</p>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<h4 class="card-title">Forschung</h4>
-								<p class="card-text grey">
-									Jedes Jahr gibt es ein neues, global relevantes Thema, zu dem die Teams wissenschaftlich arbeiten sollen. 
-									Es muss selbstständig eine passende Problemstellung und anschließend eine innovative Lösungsidee gefunden werden.
-									Die Ergbnisse müssen einer Jury vorgestellt werden.
-								</p>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-body">
-								<h4 class="card-title">Grundwerte</h4>
-								<p class="card-text grey">
-									Bei den Vorträgen zur Forschung und zum Roboterdesign beobachtet die Jury außerdem das Team selbst. 
-									Für die FLL sind Grundwerte wie Entdeckung, Innovation, Wirkung, Inklusion, Teamwork 
-									und Spaß ein wichtiger Aspekt des Bildungs&shyprogramms. 
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<!--Collapse-Button-->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>		
 			</div>
-		</section>
+		</nav>
 
-		<div class="spacer green-bottom"></div>
 
-		<!--News Section-->
-		<section id="news">
-			<div class="news">
-				<div class="container">
-					<h2 class="title">News</h2>
-					<div class="d-flex flex-column flex-xl-row">
-						<div>
-							<h4 class="subtitle">Saison 2023/24</h4>
-							<p class="text">
-								In diesem Schuljahr ist unser Team stark angewachsen. Um unseren neuen jungen Mitgliedern gerecht zu werden,
-								haben wir das Team "RoboBirds" ins Leben gerufen.
-								Die Vorbereitungen für die bevorstehenden Wettbewerbe sind in vollem Gange, und die Vorfreude auf den Wettbewerbstag steigt stetig.
-								Wir hoffen, dort auch einige bekannte Gesichter wiederzusehen!
-								Die RoboFreaks starten dieses Jahr in Nürnberg und unsere neuen RoboBirds treten wieder in Ilmenau an.
-							</p>
-						</div>	
-						<div id="newsCarousel" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
-							<div class="carousel-indicators">
-								<button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-								<button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1"></button>
-								<button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2"></button>
-								<button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="3"></button>
-							</div>
-							<div class="carousel-inner">
-								<div class="carousel-item active">
-									<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
-								</div>
-								<div class="carousel-item">
-									<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
-								</div>
-								<div class="carousel-item">
-									<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
-								</div>
-								<div class="carousel-item">
-									<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="archiv">
-				<div class="container">
-					<h2 class="title">Archiv</h2>
-					<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-						<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="23-24tab" data-bs-toggle="tab" data-bs-target="#23-24" type="button" role="tab">
-								2023-24</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="22-23tab" data-bs-toggle="tab" data-bs-target="#22-23" type="button" role="tab">
-								2022-23</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="21-22tab" data-bs-toggle="tab" data-bs-target="#21-22" type="button" role="tab">
-								2021-22</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="20-21tab" data-bs-toggle="tab" data-bs-target="#20-21" type="button" role="tab">
-								2020-21</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="19-20tab" data-bs-toggle="tab" data-bs-target="#19-20" type="button" role="tab">
-								2019-20</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="18-19tab" data-bs-toggle="tab" data-bs-target="#18-19" type="button" role="tab">
-								2018-19</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="17-18tab" data-bs-toggle="tab" data-bs-target="#17-18" type="button" role="tab">
-								2017-18</button>
-						</li>
-						<li class="nav-item" role="presentation">
-							<button class="nav-link" id="16-17tab" data-bs-toggle="tab" data-bs-target="#16-17" type="button" role="tab">
-								2016-17</button>
-						</li>
-					</ul>
-					
-					<div class="tab-content" id="myTabContent">
-						<!--Saison 2023-24 Master Piece-->
-						<div class="tab-pane fade show active" id="23-24" role="tabpanel">
-							<h3>Saison 2023-24 Master Piece <img class="logo" src="assets/flllogos/MASTERPIECE_Logo.png"></img></h3>
-						</div>
-
-						<!--Saison 2022-23 Super Powered-->
-						<div class="tab-pane fade" id="22-23" role="tabpanel">
-							<h3>Saison 2022-23 Super Powered <img class="logo" src="assets/flllogos/SUPERPOWERED_Logo.png"></img></h3>
-							
-							<h4 class="subtitle" style="padding-top: 1rem;">Verlauf</h4>
-							
-							<!--Regio-->
-							<div class="d-flex flex-column flex-xl-row content" style="padding-top: 0;">
-								<a>
-									<p class="text white">
-										Regionalwettbewerb Ilmenau:
-									</p>
-									<p class="text">
-										Zum zweiten mal sind wir zum Regionalwettbewerb in Ilmenau angetreten. 
-										Wie schon im Vorjahr waren wir von der Organisation total begeistert und es hat rießen Spaß gemacht.
-										Es war auch schön die anderen Teams wieder zu sehen.
-										Tatsächlich waren wir auch sehr erfolgreich und haben erneut den Champion Pokal erhalten. <br>
-										Robot Game: 1; Robot Design: Top 4; Forschung: Top 4; Grundwerte: ?
-									</p>
-								</a>
-								<div id="archiv22Regio" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
-									<div class="carousel-indicators">
-										<button type="button" data-bs-target="#archiv22Regio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-										<button type="button" data-bs-target="#archiv22Regio" data-bs-slide-to="1" aria-label="Slide 2"></button>
-										<button type="button" data-bs-target="#archiv22Regio" data-bs-slide-to="2" aria-label="Slide 3"></button>
-										<button type="button" data-bs-target="#archiv22Regio" data-bs-slide-to="3" aria-label="Slide 4"></button>
-									</div>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--Deutschland-->
-							<div class="d-flex flex-column flex-xl-row content">
-								<div id="archiv22Deutsch" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
-									<div class="carousel-indicators">
-										<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-										<button type="button" data-bs-target="#archiv22Deutsch" data-bs-slide-to="1" aria-label="Slide 2"></button>
-										<button type="button" data-bs-target="#archiv22Deutsch" data-bs-slide-to="2" aria-label="Slide 3"></button>
-										<button type="button" data-bs-target="#archiv22Deutsch" data-bs-slide-to="3" aria-label="Slide 4"></button>
-									</div>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
-										</div>
-									</div>
-								</div>
-								<a>
-									<p class="text right white"> 
-										Deutschlandentscheid in Frankfurt:
-									</p>
-									<p class="text right">
-										Durch den Sieg in Ilmenau haben wir uns für den Deutschlandentscheid in Siegen qualifiziert.
-										Eigentlich waren wir in allen Kategorien recht gut, 
-										leider hat es nicht für die Top 5 gereicht, was unser aus für diese Saison bedeutet hat. <br>
-										Robot Game: 1; Robot Design: Top 4; Forschung: ?; Grundwerte: Top 4
-									</p>
-								</a>
-							</div>						
-						</div>
-
-						
-						<!--Saison 2021-22 Cargo Connect-->
-						<div class="tab-pane fade" id="21-22" role="tabpanel">
-							<h3>Saison 2021-22 Cargo Connect<img class="logo" src="assets/flllogos/CARGOCONNECT_Logo.png"></img></h3>
-							
-							<h4 class="subtitle" style="padding-top: 1rem;">Verlauf</h4>
-							<!--Regio-->
-							<div class="d-flex flex-column flex-xl-row content" style="padding-top: 0;">
-								<a>
-									<p class="text white">
-										Regionalwettbewerb Ilmenau:
-									</p>
-									<p class="text">
-										In diesem Jahr haben wir uns in Ilmenau angemeldet. Aufgrund von Corona musste der Wettbewerb aber noch digital ausgetragen werden. <br>
-										Das erste mal in der Geschchichte der RoboFreaks haben wir den Regio gewonnen und uns damit für den 
-										Deutschlandentscheid in Frankfurt qualifiziert. <br>
-										Robot Game: 1; Robot Design: 3; Forschung: 4; Grundwerte: 2
-									</p>
-								</a>
-								<div id="archiv21Regio" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
-									<div class="carousel-indicators">
-										<button type="button" data-bs-target="#archiv21Regio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-										<button type="button" data-bs-target="#archiv21Regio" data-bs-slide-to="1" aria-label="Slide 2"></button>
-										<button type="button" data-bs-target="#archiv21Regio" data-bs-slide-to="2" aria-label="Slide 3"></button>
-										<button type="button" data-bs-target="#archiv21Regio" data-bs-slide-to="3" aria-label="Slide 4"></button>
-									</div>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
-										</div>
-									</div>
-								</div>
-							</div>
-							<!--Deutschland-->
-							<div class="d-flex flex-column flex-xl-row content">
-								<div id="archiv21Deutsch" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
-									<div class="carousel-indicators">
-										<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-										<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="1" aria-label="Slide 2"></button>
-										<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="2" aria-label="Slide 3"></button>
-										<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="3" aria-label="Slide 4"></button>
-									</div>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
-										</div>
-									</div>
-								</div>
-								<a>
-									<p class="text right white"> 
-										Deutschlandentscheid in Frankfurt:
-									</p>
-									<p class="text right">
-										Nachdem wir in Ilmenau gewonnen hatten, haben wir uns als Ziel gesetzt das RobotGame zu überarbeiten.
-										Über viele Stunden Arbeit konnten wir so die vollen 680p erreichen.
-										Am Wettkampftag, der wegen Corona noch digital stattgefunden hat, ist unser Robi nicht das gefahren, was er eingentlich könnte. <br>
-										Deshalb hatten wir an ein Weiterkommen nicht mehr gedacht und waren extrem überrascht und erfreut, 
-										dass wir den 4. Platz belegt haben. Dadruch qualifizierten wir uns für das große DACh Finale in Paderborn. <br>
-										Robot Game: 5; Robot Design: 13; Forschung: 9; Grundwerte: 1
-									</p>
-								</a>
-							</div>
-							<!--Dach-->
-							<div class="d-flex flex-column flex-xl-row content">
-								<a>
-									<p class="text white">
-										DACh Finale in Paderborn:
-									</p>
-									<p class="text">
-										Endlich wieder ein Wettkampf in Präsenz. 
-										Als der Name "RoboFreaks" als Gewinner verkündet wurde, konnten wir uns erst gar nicht wirklich freuen.
-										Vielmehr waren wir in einer Schockstarre und erst einge Tage später konnten wir realisieren was passiert ist.<br>
-										Robot Game: 2; Robot Design: 2; Forschung: 5; Grundwerte: 9
-									</p>
-								</a>
-								<div id="archiv21Dach" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
-									<div class="carousel-indicators">
-										<button type="button" data-bs-target="#archiv21Dach" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-										<button type="button" data-bs-target="#archiv21Dach" data-bs-slide-to="1" aria-label="Slide 2"></button>
-										<button type="button" data-bs-target="#archiv21Dach" data-bs-slide-to="2" aria-label="Slide 3"></button>
-										<button type="button" data-bs-target="#archiv21Dach" data-bs-slide-to="3" aria-label="Slide 4"></button>
-									</div>
-									<div class="carousel-inner">
-										<div class="carousel-item active">
-											<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
-										</div>
-										<div class="carousel-item">
-											<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
-										</div>
-									</div>
-								</div>
-							</div>
-							<h4 class="subtitle">Robot Game</h4>
-							<div class="video">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/Q-It4PC73FU" title="RobotGame FLL 2022" frameborder="0" allowfullscreen></iframe>
-							</div>
-							
-							<h4 class="subtitle">Forschung</h4>
-							<div class="d-flex flex-wrap justify-content-center">
-								
-							</div>
-						</div>
-
-						<!--Saison 2020-21 RePlay-->
-						<div class="tab-pane fade" id="20-21" role="tabpanel">
-							<h3>Saison 2020-21 RePlay</h3>
-						</div>
-
-						<!--Saison 2019-20 City Chaper-->
-						<div class="tab-pane fade" id="19-20" role="tabpanel">
-							<h3>Saison 2019-20 City Chaper</h3>
-						</div>
-
-						<!--Saison 2018-19 Into Orbit-->
-						<div class="tab-pane fade" id="18-19" role="tabpanel">
-							<h3>Saison 2018-19 Into Orbit</h3>
-						</div>
-
-						<!--Saison 2017-18 Hydro Dynamics-->
-						<div class="tab-pane fade" id="17-18" role="tabpanel">
-							<h3>Saison 2017-18 Hydro Dynamics</h3>
-						</div>
-
-						<!--Saison 2016-17 Animal Allies-->
-						<div class="tab-pane fade" id="16-17" role="tabpanel">
-							<h3>Saison 2016-17 Animal Allies</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	
-	
-		<div class="footer text">
-			Diese Webseite befindet sich noch im Aufbau.
-		  </div>
 		<!--Main-->
-	</div>
+		<div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+			
+			<!--About Section-->
+			<section id="about">
+				<div class="about">
+					<div class="container">
+						<h1 class="title">Robo&shyFreaks</h1>
+						<p class="text">
+						Servus! Wir sind die RoboFreaks vom <a class="link grey" href="https://www.frankenwald-gymnasium.de/" target="_blank">Frankenwald Gymnasium Kronach</a>. <br> 
+						Wir sind ein Team aus 14 Schülern von der 7. bis zur 12. Klasse. 
+						Jeden Freitag (vor Wettbewerben auch häufiger) treffen wir uns als Robotik AG in unserer Schule. 
+						Dort bauen und programmieren wir an unseren Lego Robotern, forschen, experimentieren, essen oder treiben Blödsinn.   
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!--Team Section-->
+			<section id="team">
+				<div class="team">
+					<div class="container">
+						<h2 class="title">Team</h2>
+						<div class="card-deck d-flex flex-wrap justify-content-center">
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 1">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Konrad</h4>
+									<p class="card-text">Hacker</p>
+									
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 2">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Danis</h4>
+									<p class="card-text">Eiskalt</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 3">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Jona&shythan</h4>
+									<p class="card-text">Der Bessere</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 5">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Jana</h4>
+									<p class="card-text">Fancy</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Anton</h4>
+									<p class="card-text">Läufer</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Moritz</h4>
+									<p class="card-text"></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Benedikt</h4>
+									<p class="card-text"></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Philipp</h4>
+									<p class="card-text"></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">David</h4>
+									<p class="card-text"></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Jona&shythan</h4>
+									<p class="card-text"></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Noah</h4>
+									<p class="card-text"></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 4">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Luca</h4>
+									<p class="card-text"></p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 7">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Jona&shythan</h4>
+									<p class="card-text">immer hungrig</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 8">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Fabian</h4>
+									<p class="card-text">überarbeitet</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Till</h4>
+									<p class="card-text">Co Coach</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Nico</h4>
+									<p class="card-text">Veteran</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Chris&shytian</h4>
+									<p class="card-text">Schinken Coach</p>
+								</div>
+							</div>
+							<div class="card">
+								<img src="../assets/profilepictures/person.svg" class="profile-pic" alt="Team member 6">
+								<div class="card-body">
+									<hr>
+									<h4 class="card-title">Armin</h4>
+									<p class="card-text">Kameramann</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="statistics">
+					<div class="container">
+						<div class="card-deck d-flex flex-wrap justify-content-evenly" id="start1">
+							<div class="card">
+								<div class="card-body" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+								title="Seit 2016 nehmen wir jährlich an der FLL Teil.">
+									<h3 class="card-title" id="count-fll" data-stop="8" data-speed="400">0</h3>
+									<p class="card-text">Fll Wettbewerbe</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+								title="Unserer Inventur zufolge haben wir 15315 Lego Teile. Ja, wir haben eine Excel Liste dafür.">
+									<h3 class="card-title" id="count-lego" data-stop="15315">0</h3>
+									<p class="card-text">Lego Teile</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+								title="Wenn es schnell gehen muss, wird Döner in der Schwedenstraße geholt. Teilweise auch zweimal.">
+									<h3 class="card-title" id="count-döner" data-stop="234" data-speed="15">0</h3>
+									<p class="card-text">Döner gegessen</p>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>	
+			</section>
+		
+			<div class="spacer green-top"></div>
+
+			<!--Competition Section-->
+			<section id="competition">
+				<div class="competition">
+					<div class="container">
+						<h2 class="title">First Lego League</h2>
+						<p class="text">
+							Als Team nehmen wir jedes Jahr an der <a href="https://www.first-lego-league.org/de/" target="_blank" class="link grey">First Lego League</a> teil.
+							Das ist ein Wettbewerb für 9-16-jährige, der weltweit ausgetragen wird. 
+							An unserer Schule kann man ab der 7. Klasse in das Wettkampfteam kommen. <br>
+							Die FLL besteht aus den 4 Teilbereichen Robot Game, Robot Design, Forschung und den Grundwerten. 
+							Man muss sich auf alle vier vorbereiten und am Wettkampftag zeigen, was man erarbeitet hat.
+							Das Team, das insgesamt am besten abschneidet, wird als Gesamtsieger (Champion) gekürt.
+						</p>
+					</div>
+					<div class="container-fluid">
+						<div class="card-deck d-flex flex-wrap justify-content-center">
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Robot Game</h4>
+									<p class="card-text grey">
+										Jedes Jahr gibt es ein neues Spielfeld mit Aufgaben aus LEGO, welches uns zugesendet wird.
+										Die Teams konstruieren, bauen und programmieren einen Roboter,
+										sodass dieser möglichst viele Aufgaben autonom in 2:30 Minuten auf der Matte erledigt. 
+									</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Robot Design</h4>
+									<p class="card-text grey">
+										Einer Jury muss innerhalb von 5 Minuten gezeigt werden, was unseren Roboter, dessen Module und Programmierung									sowie unsere Strategie so besonders und innovativ macht. 
+										Anschließend muss man noch den Fragen der Jury Rede und Antwort stehen. 
+									</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Forschung</h4>
+									<p class="card-text grey">
+										Jedes Jahr gibt es ein neues, global relevantes Thema, zu dem die Teams wissenschaftlich arbeiten sollen. 
+										Es muss selbstständig eine passende Problemstellung und anschließend eine innovative Lösungsidee gefunden werden.
+										Die Ergbnisse müssen einer Jury vorgestellt werden.
+									</p>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-body">
+									<h4 class="card-title">Grundwerte</h4>
+									<p class="card-text grey">
+										Bei den Vorträgen zur Forschung und zum Roboterdesign beobachtet die Jury außerdem das Team selbst. 
+										Für die FLL sind Grundwerte wie Entdeckung, Innovation, Wirkung, Inklusion, Teamwork 
+										und Spaß ein wichtiger Aspekt des Bildungs&shyprogramms. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="spacer green-bottom"></div>
+
+			<!--News Section-->
+			<section id="news">
+				<div class="news">
+					<div class="container">
+						<h2 class="title">News</h2>
+						<div class="d-flex flex-column flex-xl-row">
+							<div>
+								<h4 class="subtitle">Saison 2023/24</h4>
+								<p class="text">
+									In diesem Schuljahr ist unser Team stark angewachsen. Um unseren neuen jungen Mitgliedern gerecht zu werden,
+									haben wir das Team "RoboBirds" ins Leben gerufen.
+									Die Vorbereitungen für die bevorstehenden Wettbewerbe sind in vollem Gange, und die Vorfreude auf den Wettbewerbstag steigt stetig.
+									Wir hoffen, dort auch einige bekannte Gesichter wiederzusehen!
+									Die RoboFreaks starten dieses Jahr in Nürnberg und unsere neuen RoboBirds treten wieder in Ilmenau an.
+								</p>
+							</div>	
+							<div id="newsCarousel" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+									<button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1"></button>
+									<button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2"></button>
+									<button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="3"></button>
+								</div>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
+									</div>
+									<div class="carousel-item">
+										<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
+									</div>
+									<div class="carousel-item">
+										<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
+									</div>
+									<div class="carousel-item">
+										<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="archiv">
+					<div class="container">
+						<h2 class="title">Archiv</h2>
+						<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="23-24tab" data-bs-toggle="tab" data-bs-target="#23-24" type="button" role="tab">
+									2023-24</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="22-23tab" data-bs-toggle="tab" data-bs-target="#22-23" type="button" role="tab">
+									2022-23</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="21-22tab" data-bs-toggle="tab" data-bs-target="#21-22" type="button" role="tab">
+									2021-22</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="20-21tab" data-bs-toggle="tab" data-bs-target="#20-21" type="button" role="tab">
+									2020-21</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="19-20tab" data-bs-toggle="tab" data-bs-target="#19-20" type="button" role="tab">
+									2019-20</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="18-19tab" data-bs-toggle="tab" data-bs-target="#18-19" type="button" role="tab">
+									2018-19</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="17-18tab" data-bs-toggle="tab" data-bs-target="#17-18" type="button" role="tab">
+									2017-18</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="16-17tab" data-bs-toggle="tab" data-bs-target="#16-17" type="button" role="tab">
+									2016-17</button>
+							</li>
+						</ul>
+						
+						<div class="tab-content" id="myTabContent">
+							<!--Saison 2023-24 Master Piece-->
+							<div class="tab-pane fade show active" id="23-24" role="tabpanel">
+								<h3>Saison 2023-24 Master Piece <img class="logo" src="assets/flllogos/MASTERPIECE_Logo.png"></img></h3>
+							</div>
+
+							<!--Saison 2022-23 Super Powered-->
+							<div class="tab-pane fade" id="22-23" role="tabpanel">
+								<h3>Saison 2022-23 Super Powered <img class="logo" src="assets/flllogos/SUPERPOWERED_Logo.png"></img></h3>
+								
+								<h4 class="subtitle" style="padding-top: 1rem;">Verlauf</h4>
+								
+								<!--Regio-->
+								<div class="d-flex flex-column flex-xl-row content" style="padding-top: 0;">
+									<a>
+										<p class="text white">
+											Regionalwettbewerb Ilmenau:
+										</p>
+										<p class="text">
+											Zum zweiten mal sind wir zum Regionalwettbewerb in Ilmenau angetreten. 
+											Wie schon im Vorjahr waren wir von der Organisation total begeistert und es hat rießen Spaß gemacht.
+											Es war auch schön die anderen Teams wieder zu sehen.
+											Tatsächlich waren wir auch sehr erfolgreich und haben erneut den Champion Pokal erhalten. <br>
+											Robot Game: 1; Robot Design: Top 4; Forschung: Top 4; Grundwerte: ?
+										</p>
+									</a>
+									<div id="archiv22Regio" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#archiv22Regio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#archiv22Regio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+											<button type="button" data-bs-target="#archiv22Regio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+											<button type="button" data-bs-target="#archiv22Regio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Deutschland-->
+								<div class="d-flex flex-column flex-xl-row content">
+									<div id="archiv22Deutsch" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#archiv22Deutsch" data-bs-slide-to="1" aria-label="Slide 2"></button>
+											<button type="button" data-bs-target="#archiv22Deutsch" data-bs-slide-to="2" aria-label="Slide 3"></button>
+											<button type="button" data-bs-target="#archiv22Deutsch" data-bs-slide-to="3" aria-label="Slide 4"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
+											</div>
+										</div>
+									</div>
+									<a>
+										<p class="text right white"> 
+											Deutschlandentscheid in Frankfurt:
+										</p>
+										<p class="text right">
+											Durch den Sieg in Ilmenau haben wir uns für den Deutschlandentscheid in Siegen qualifiziert.
+											Eigentlich waren wir in allen Kategorien recht gut, 
+											leider hat es nicht für die Top 5 gereicht, was unser aus für diese Saison bedeutet hat. <br>
+											Robot Game: 1; Robot Design: Top 4; Forschung: ?; Grundwerte: Top 4
+										</p>
+									</a>
+								</div>						
+							</div>
+
+							
+							<!--Saison 2021-22 Cargo Connect-->
+							<div class="tab-pane fade" id="21-22" role="tabpanel">
+								<h3>Saison 2021-22 Cargo Connect<img class="logo" src="assets/flllogos/CARGOCONNECT_Logo.png"></img></h3>
+								
+								<h4 class="subtitle" style="padding-top: 1rem;">Verlauf</h4>
+								<!--Regio-->
+								<div class="d-flex flex-column flex-xl-row content" style="padding-top: 0;">
+									<a>
+										<p class="text white">
+											Regionalwettbewerb Ilmenau:
+										</p>
+										<p class="text">
+											In diesem Jahr haben wir uns in Ilmenau angemeldet. Aufgrund von Corona musste der Wettbewerb aber noch digital ausgetragen werden. <br>
+											Das erste mal in der Geschchichte der RoboFreaks haben wir den Regio gewonnen und uns damit für den 
+											Deutschlandentscheid in Frankfurt qualifiziert. <br>
+											Robot Game: 1; Robot Design: 3; Forschung: 4; Grundwerte: 2
+										</p>
+									</a>
+									<div id="archiv21Regio" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#archiv21Regio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#archiv21Regio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+											<button type="button" data-bs-target="#archiv21Regio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+											<button type="button" data-bs-target="#archiv21Regio" data-bs-slide-to="3" aria-label="Slide 4"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Deutschland-->
+								<div class="d-flex flex-column flex-xl-row content">
+									<div id="archiv21Deutsch" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="1" aria-label="Slide 2"></button>
+											<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="2" aria-label="Slide 3"></button>
+											<button type="button" data-bs-target="#archiv21Deutsch" data-bs-slide-to="3" aria-label="Slide 4"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
+											</div>
+										</div>
+									</div>
+									<a>
+										<p class="text right white"> 
+											Deutschlandentscheid in Frankfurt:
+										</p>
+										<p class="text right">
+											Nachdem wir in Ilmenau gewonnen hatten, haben wir uns als Ziel gesetzt das RobotGame zu überarbeiten.
+											Über viele Stunden Arbeit konnten wir so die vollen 680p erreichen.
+											Am Wettkampftag, der wegen Corona noch digital stattgefunden hat, ist unser Robi nicht das gefahren, was er eingentlich könnte. <br>
+											Deshalb hatten wir an ein Weiterkommen nicht mehr gedacht und waren extrem überrascht und erfreut, 
+											dass wir den 4. Platz belegt haben. Dadruch qualifizierten wir uns für das große DACh Finale in Paderborn. <br>
+											Robot Game: 5; Robot Design: 13; Forschung: 9; Grundwerte: 1
+										</p>
+									</a>
+								</div>
+								<!--Dach-->
+								<div class="d-flex flex-column flex-xl-row content">
+									<a>
+										<p class="text white">
+											DACh Finale in Paderborn:
+										</p>
+										<p class="text">
+											Endlich wieder ein Wettkampf in Präsenz. 
+											Als der Name "RoboFreaks" als Gewinner verkündet wurde, konnten wir uns erst gar nicht wirklich freuen.
+											Vielmehr waren wir in einer Schockstarre und erst einge Tage später konnten wir realisieren was passiert ist.<br>
+											Robot Game: 2; Robot Design: 2; Forschung: 5; Grundwerte: 9
+										</p>
+									</a>
+									<div id="archiv21Dach" class="carousel slide d-flex align-items-end" data-bs-ride="carousel">
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#archiv21Dach" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#archiv21Dach" data-bs-slide-to="1" aria-label="Slide 2"></button>
+											<button type="button" data-bs-target="#archiv21Dach" data-bs-slide-to="2" aria-label="Slide 3"></button>
+											<button type="button" data-bs-target="#archiv21Dach" data-bs-slide-to="3" aria-label="Slide 4"></button>
+										</div>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="../assets/Platzhalter1.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter2.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter3.JPG" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../assets/Platzhalter4.JPG" class="d-block w-100">
+											</div>
+										</div>
+									</div>
+								</div>
+								<h4 class="subtitle">Robot Game</h4>
+								<div class="video">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/Q-It4PC73FU" title="RobotGame FLL 2022" frameborder="0" allowfullscreen></iframe>
+								</div>
+								
+								<h4 class="subtitle">Forschung</h4>
+								<div class="d-flex flex-wrap justify-content-center">
+									
+								</div>
+							</div>
+
+							<!--Saison 2020-21 RePlay-->
+							<div class="tab-pane fade" id="20-21" role="tabpanel">
+								<h3>Saison 2020-21 RePlay</h3>
+							</div>
+
+							<!--Saison 2019-20 City Chaper-->
+							<div class="tab-pane fade" id="19-20" role="tabpanel">
+								<h3>Saison 2019-20 City Chaper</h3>
+							</div>
+
+							<!--Saison 2018-19 Into Orbit-->
+							<div class="tab-pane fade" id="18-19" role="tabpanel">
+								<h3>Saison 2018-19 Into Orbit</h3>
+							</div>
+
+							<!--Saison 2017-18 Hydro Dynamics-->
+							<div class="tab-pane fade" id="17-18" role="tabpanel">
+								<h3>Saison 2017-18 Hydro Dynamics</h3>
+							</div>
+
+							<!--Saison 2016-17 Animal Allies-->
+							<div class="tab-pane fade" id="16-17" role="tabpanel">
+								<h3>Saison 2016-17 Animal Allies</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		
+			<div class="message text">
+				Diese Webseite befindet sich noch im Aufbau.
+			</div>
+			<!--Main-->
+		</div>
 
 
-	<script src="../js/bootstrap.bundle.min.js"></script>
-	<script src="../js/main.js"></script>
-</body>
+		<script src="../js/bootstrap.bundle.min.js"></script>
+		<script src="../js/main.js"></script>
+	</body>
+
+	<footer>
+		<section id="footer">
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<a class="subtitle white" href="impressum.html" style="text-decoration: none;">Impressum</a>
+						</div>
+						<div class="col">
+							<p class="subtitle white">Anschrift</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+						</div>
+						<div class="col">
+							<p class="text white">
+								Am Schulzentrum 5, 96317 Kronach <br>
+								sekretariat@frankenwald-gymnasium.de <br>
+								09261-62120
+							</p>
+						</div>
+					</div>
+					<hr>
+					<p> &copy; 2023 Frankenwald-Gymnasium Kronach</p>
+				</div>
+			</div>
+		</section>
+	</footer>
+
 </html>
