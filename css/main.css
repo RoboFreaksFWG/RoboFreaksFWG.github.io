@@ -150,6 +150,7 @@ h4{
 	color: #fff !important;
 }
 .about .title {
+	font-family: 'Chakra Petch', sans-serif;
 	font-size: 10vw;
 	font-weight:bold;
 }
@@ -230,10 +231,10 @@ h4{
 .statistics .card-text{
 	font-weight: bold !important;
 }
+
 /*-------------------------------------
 			competition	 
 -------------------------------------*/
-
 .competition{
 	background: #237841 !important;
 	background-position:bottom !important;
