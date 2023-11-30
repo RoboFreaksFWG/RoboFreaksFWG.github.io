@@ -121,6 +121,9 @@ h4{
 /*-------------------------------------
 				 Navbar 
 -------------------------------------*/
+.navbar-brand{
+	font-family: 'Chakra Petch', sans-serif;
+}
 .nav-link {
 	color: white !important;
 	font-family: Lato, sans-serif !important;
