@@ -321,6 +321,8 @@ h4{
 }
 .archiv .logo{
 	height: 40px;
+	aspect-ratio: 0 !important;
+	margin-left: .8rem;
 }
 .archiv .subtitle{
 	padding-top: 6rem;
