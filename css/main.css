@@ -361,6 +361,7 @@ h4{
 .archiv img{
 	aspect-ratio: 16/9;
 	object-fit: cover;
+	object-position: top;
 }
 
 /*-------------------------------------
