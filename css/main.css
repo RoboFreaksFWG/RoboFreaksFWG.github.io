@@ -294,7 +294,7 @@ h4{
 /*-------------------------------------
 				news	 
 -------------------------------------*/
-
+/*
 .news .subtitle{
 	text-align: left;
 }
@@ -309,6 +309,60 @@ h4{
 		width: auto;
 	}
 }
+*/
+.news{
+	padding-top: 8rem !important;
+}
+
+.news .tab-content{
+	padding-top: 2rem;
+}
+.news .logo{
+	height: 40px;
+	aspect-ratio: 0 !important;
+	margin-left: .8rem;
+}
+.news .subtitle{
+	text-align: left;
+}
+.news .content{
+	padding-top: 3rem;
+}
+.news .white{
+	color: white;
+	margin: 0;
+}
+.news .text{
+	text-align: left;
+	min-width: 40vw;
+	width: 40vw;
+	margin-right: 2rem;
+	hyphens: auto;
+}
+.news .right{
+	text-align: left;
+	min-width: 40vw;
+	width: 40vw;
+	margin-left: 2rem;
+	hyphens: auto;
+}
+@media (max-width:1199px){
+	.news .text{
+		width: auto;
+	}
+	.news .right{
+		width: auto;
+		margin-left: auto;
+		margin-right: 2rem;
+		order: -1;
+	}
+}
+.news img{
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	object-position: top;
+}
+
 /*-------------------------------------
 				archiv	 
 -------------------------------------*/
