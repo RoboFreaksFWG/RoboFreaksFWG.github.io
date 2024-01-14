@@ -292,72 +292,69 @@ h4{
 
 
 /*-------------------------------------
-				news	 
+				blog	 
 -------------------------------------*/
 /*
-.news .subtitle{
-	text-align: left;
-}
 .news .text{
 	text-align: left;
 	width: 30rem;
 	margin-right: 2rem;
 	hyphens: auto;
 }
-@media (max-width:1199px){
-	.news .text{
-		width: auto;
-	}
-}
 */
-.news{
+.blog{
 	padding-top: 8rem !important;
 }
 
-.news .tab-content{
+.blog .tab-content{
 	padding-top: 2rem;
 }
-.news .logo{
+.blog .logo{
 	height: 40px;
 	aspect-ratio: 0 !important;
 	margin-left: .8rem;
 }
-.news .subtitle{
+.blog .subtitle{
 	text-align: left;
 }
-.news .content{
+.blog .content{
 	padding-top: 3rem;
 }
-.news .white{
+.blog .white{
 	color: white;
 	margin: 0;
 }
-.news .text{
+.blog .text{
+	width: 526px;
+	min-width: 526px;
 	text-align: left;
-	min-width: 40vw;
-	width: 40vw;
 	margin-right: 2rem;
 	hyphens: auto;
 }
-.news .right{
-	text-align: left;
-	min-width: 40vw;
-	width: 40vw;
+.blog .right{
 	margin-left: 2rem;
+	margin-right: 0rem;
 	hyphens: auto;
 }
-@media (max-width:1199px){
-	.news .text{
-		width: auto;
-	}
-	.news .right{
-		width: auto;
-		margin-left: auto;
-		margin-right: 2rem;
-		order: -1;
+@media (min-width:1400px){
+	.blog .text{
+		width: 616px;
+		min-width: 616px;
 	}
 }
-.news img{
+@media (max-width:1199px){
+	.blog .text{
+		width: auto;
+		min-width: none;
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+	.blog .right{
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+}
+.blog img{
 	aspect-ratio: 16/9;
 	object-fit: cover;
 	object-position: top;
@@ -370,55 +367,11 @@ h4{
 	padding-top: 8rem !important;
 }
 
-.archiv .tab-content{
-	padding-top: 2rem;
-}
-.archiv .logo{
-	height: 40px;
-	aspect-ratio: 0 !important;
-	margin-left: .8rem;
-}
 .archiv .subtitle{
 	padding-top: 6rem;
 	text-align: left;
 }
-.archiv .content{
-	padding-top: 3rem;
-}
-.archiv .white{
-	color: white;
-	margin: 0;
-}
-.archiv .text{
-	text-align: left;
-	min-width: 40vw;
-	width: 40vw;
-	margin-right: 2rem;
-	hyphens: auto;
-}
-.archiv .right{
-	text-align: left;
-	min-width: 40vw;
-	width: 40vw;
-	margin-left: 2rem;
-	hyphens: auto;
-}
-@media (max-width:1199px){
-	.archiv .text{
-		width: auto;
-	}
-	.archiv .right{
-		width: auto;
-		margin-left: auto;
-		margin-right: 2rem;
-		order: -1;
-	}
-}
-.archiv img{
-	aspect-ratio: 16/9;
-	object-fit: cover;
-	object-position: top;
-}
+
 
 /*-------------------------------------
 				 impressum 
