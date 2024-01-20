@@ -345,7 +345,7 @@ h4{
 @media (max-width:1199px){
 	.blog .text{
 		width: auto;
-		min-width: none;
+		min-width: auto;
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}
