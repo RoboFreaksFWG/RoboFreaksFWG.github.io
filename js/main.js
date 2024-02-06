@@ -1,10 +1,11 @@
 /*-------------------------------------
 				Navbar			
 -------------------------------------*/
+/*
 let lastScrollTop = 0;
 navbar = document.getElementsByClassName("navbar")[0];
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function() { //versteckt Nacbar beim runterscrollen
 	let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
 	if (currentScroll > lastScrollTop) {
@@ -17,6 +18,7 @@ window.addEventListener("scroll", function() {
 
 	lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Für negative Scrolling-Werte
 }, false);
+*/
 
 /*-------------------------------------
 			Type Writer 
