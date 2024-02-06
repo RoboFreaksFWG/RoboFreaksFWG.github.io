@@ -184,7 +184,7 @@ h4{
 	padding-top: 8rem !important;
 }
 .team .card-deck{
-	gap: 60px;
+	gap: 42px;
 }
 @media (max-width:500px){
 	.team .card-deck{
@@ -196,7 +196,7 @@ h4{
 	color: white;
 	border: transparent;
 	box-shadow: none;
-	width: 9.3rem;
+	width: 8rem;
 }
 .team .card-body{
 	padding: 0;
