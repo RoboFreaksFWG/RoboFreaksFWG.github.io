@@ -184,9 +184,10 @@ function CreateBlogElement(parentId, titleText, paragraphText, images, textRight
 	carouselDiv.appendChild(carouselInner);
 
 
+	var SmallScreen = window.matchMedia("(max-width:1199px)").matches;
 
 	// Füge Text und Carousel in der gewünschten Reihenfolge zum container hinzu
-	if (textRightSide) {
+	if (textRightSide && !SmallScreen) {
 		container.appendChild(carouselDiv); // Funktion zum Erstellen des Carousel-Elements
 		container.appendChild(textDiv);
 	} else {
