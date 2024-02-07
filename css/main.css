@@ -1,5 +1,5 @@
 /*-------------------------------------
-				 general 
+				general 
 -------------------------------------*/
 
 /*
@@ -51,13 +51,13 @@ footer {
 }
 
 .message {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #1a1a24;
-    text-align: center;
-    padding: 10px 0;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #1a1a24;
+	text-align: center;
+	padding: 10px 0;
 }
 
 /*----------- font-sizes ----------*/
@@ -119,10 +119,10 @@ h4{
 
 
 /*-------------------------------------
-				 Navbar 
+				Navbar 
 -------------------------------------*/
 .navbar {
-    transition: top .3s;
+	transition: top .3s;
 }
 .navbar-brand{
 	font-family: 'Chakra Petch', sans-serif;
@@ -148,7 +148,7 @@ h4{
 	}
 }
 /*-------------------------------------
-				 about 
+				about 
 -------------------------------------*/
 .about{
 	padding-top: 10rem !important;
@@ -178,7 +178,7 @@ h4{
 }
 
 /*-------------------------------------
-				 team 
+				team 
 -------------------------------------*/
 .team{
 	padding-top: 8rem !important;
@@ -216,15 +216,15 @@ h4{
 	margin-bottom: 5px;
 }
 .team img {
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7); /* Schatten für einen 3D-Effekt */
+	border-radius: 50%;
+	object-fit: cover;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7); /* Schatten für einen 3D-Effekt */
 	margin-bottom: 10px;
 }
 
 
 /*-------------------------------------
-				 stats 
+				stats 
 -------------------------------------*/
 .statistics{
 	padding-top: 5rem !important;
@@ -328,10 +328,33 @@ h4{
 	margin-right: 0rem;
 	hyphens: auto;
 }
+
+.skeleton {
+	width: 558px;
+	min-width: 558px;
+	background-color: #9b9b9b;
+	animation: pulse 2.5s infinite ease-in-out;
+}
+@keyframes pulse {
+	0% {
+	background-color: #666666;
+	}
+	50% {
+	background-color: #bbbbbb;
+	}
+	100% {
+	background-color: #666666;
+	}
+}
+
 @media (min-width:1400px){
 	.blog .text{
 		width: 616px;
 		min-width: 616px;
+	}
+	.skeleton{
+		width: 648px;
+		min-width: 648px;
 	}
 }
 @media (max-width:1199px){
@@ -345,12 +368,40 @@ h4{
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}
+	.skeleton{
+		width: 936px ;
+		min-width: 936px;
+	}
 }
+
+@media (max-width: 991px) {
+	.skeleton {
+		width: 696px; /* Max-Width für 'md' Container */
+		min-width: 696px;
+	}
+}
+
+@media (max-width: 767px) {
+	.skeleton {
+		width: 516px; /* Max-Width für 'sm' Container */
+		min-width: 516px;
+	}
+}
+
+@media (max-width: 575px) {
+	.skeleton {
+		width: 100%; /* Für 'xs' Bildschirme, volle Breite */
+		min-width: 100%;
+	}
+}
+
 .blog img{
 	aspect-ratio: 16/9;
 	object-fit: cover;
 	object-position: top;
 }
+
+
 
 /*-------------------------------------
 				archiv	 
@@ -366,7 +417,7 @@ h4{
 
 
 /*-------------------------------------
-				 impressum 
+				impressum 
 -------------------------------------*/
 .impressum{
 	padding-top: 1rem;
@@ -380,7 +431,7 @@ h4{
 
 
 /*-------------------------------------
-				 footer 
+				footer 
 -------------------------------------*/
 .footer{
 	padding-top: 1rem;

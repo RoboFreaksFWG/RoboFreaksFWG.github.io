@@ -132,10 +132,11 @@ function CreateBlogElement(parentId, titleText, paragraphText, images, textRight
 
 
 	// Erstelle den Carousel-Bereich
-	var carouselId = 'Carousel' + parentId; // Eindeutige ID
 	var carouselDiv = document.createElement('div');
-	carouselDiv.id = carouselId;
 	carouselDiv.className = 'carousel slide d-flex align-items-end';
+	
+	var carouselId = 'Carousel' + parentId; // Eindeutige ID
+	carouselDiv.id = carouselId;
 	carouselDiv.setAttribute('data-bs-ride', 'carousel');
 
 	// Indikatoren und Inneres des Carousels
@@ -157,19 +158,23 @@ function CreateBlogElement(parentId, titleText, paragraphText, images, textRight
 		// Carousel-Item
 		var item = document.createElement('div');
 		item.className = 'carousel-item' + (index === 0 ? ' active' : '');
+
 		var img = document.createElement('img');
 		img.src = imageObj.src;
-		img.className = 'd-block w-100';
+		img.className = 'd-block w-100 skeleton';
+		img.setAttribute('loading', imageObj.loading || 'lazy'); // Setze das loading-Attribut, sonst lazy
+
+		//entferne Skeleton wen geladen
+		img.onload = function() {
+			this.classList.remove('skeleton');
+		};
 
 		// Wende CSS-Styles an, falls vorhanden
-        if (imageObj.style) {
-            Object.keys(imageObj.style).forEach(key => {
-                img.style[key] = imageObj.style[key];
-            });
-        }
-
-		// Setze das loading-Attribut, falls vorhanden
-		img.setAttribute('loading', imageObj.loading || 'lazy');
+		if (imageObj.style) {
+			Object.keys(imageObj.style).forEach(key => {
+				img.style[key] = imageObj.style[key];
+			});
+		}
 
 		item.appendChild(img);
 		carouselInner.appendChild(item);
