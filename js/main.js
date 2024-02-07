@@ -207,10 +207,14 @@ CreateBlogElement('23/24-1', 'Vorbereitungen',
 	'In diesem Schuljahr ist unser Team stark angewachsen. Um unseren neuen jungen Mitgliedern gerecht zu werden, haben wir das Team "RoboBirds" ins Leben gerufen. Die Vorbereitungen für die bevorstehenden Wettbewerbe sind in vollem Gange, und die Vorfreude auf den Wettbewerbstag steigt stetig. Wir hoffen, dort auch einige bekannte Gesichter wiederzusehen! <br> Die RoboFreaks starten dieses Jahr in Nürnberg.',
 	[{src: '../assets/seasons/23-24/Vorbereitung.jpg', loading: 'eager'},{src: '../assets/seasons/23-24/SpielfeldAufbau.jpg'}],
 	false, true);
-CreateBlogElement('23/24-2', 'Regio Ilmenau' , 
-	'Die Robobirds (unser neues & junges Team) haben am Regionalwettbewerb in Ilmenau teilgenommen. Die gesamte Organisation vor Ort war wie im Jahr zuvor wieder unglaublich gut.Wir wurden bestens versorgt und es war spitze, wieder die ganzen uns schon bekannten Teams aber auch neue zu treffen. <br> Im RobotGame haben wir uns in den Vorrunden gut geschlagen und sind so ins Halbfinale und dann sogar noch ins Finale gekommen. Die Spannung bei der Siegerehrung war also riesig. <br> Letztendlich kamen wir auf einen unglaublichen 2. Platz und haben uns damit sogar für die nächste Runde in Regensburg qualifiziert! <br> Robot Game: 2; Robot Design: Top 4; Forschung: Top 4; Grundwerte: 1', 
+CreateBlogElement('23/24-2', 'Regionalwettbewerb Ilmenau' , 
+	'Die Robobirds (unser neues & junges Team) haben am Regionalwettbewerb in Ilmenau teilgenommen. Die gesamte Organisation vor Ort war wie im Jahr zuvor wieder unglaublich gut. Wir wurden bestens versorgt und es war spitze, wieder die ganzen uns schon bekannten Teams, aber auch neue zu treffen. <br> Im RobotGame haben wir uns in den Vorrunden gut geschlagen und sind so ins Halbfinale und dann sogar noch ins Finale gekommen. Die Spannung bei der Siegerehrung war also riesig. <br> Letztendlich kamen wir auf einen unglaublichen 2. Platz und haben uns damit sogar für die nächste Runde in Regensburg qualifiziert! <br> Robot Game: 2; Robot Design: Top 4; Forschung: Top 4; Grundwerte: 1', 
 	[{src: '../assets/seasons/23-24/Ilmenau-RobotGame.jpg'},{src: '../assets/seasons/23-24/Ilmenau-Forschung1.jpg'}, {src: '../assets/seasons/23-24/Ilmenau-Forschung2.jpg'}], 
 	true);
+CreateBlogElement('23/24-2', 'Regionalwettbewerb Nürnberg',
+	'Zum ersten mal seit 5 Jahren sind wir nach Nürnberg zum Regionalwettbewerb gegangen. Insgesamt konnten wir den 2. Platz belegen. <br> RobotGame: 2; RobotDesign: N/A; Forschung: Top 4; Grundwerte: 1',
+	[], 
+)
 
 /*22/23*/
 CreateBlogElement('22/23-1', 'Regionalwettbewerb Ilmenau:',
@@ -239,3 +243,7 @@ CreateBlogElement('21/22-3', 'DACH Finale in Paderborn:',
 	[{src: '../assets/seasons/21-22/Paderborn-Sieger.JPG'}, {src: '../assets/seasons/21-22/Paderborn-Jury.png'},
 	{src: '../assets/seasons/21-22/Paderborn-Forschung.JPG'}, {src: '../assets/seasons/21-22/Paderborn-RobotGame.JPG'}, {src: '../assets/seasons/21-22/Paderborn-Siegerehrung.JPG'}],
 )
+/*20/21*/
+CreateBlogElement('20/21-1', '',
+	'Aufgrund von Corona konnten wir leider an keinem Wettbewerb teilnehmen und die FLL musste für uns in diesem Jahr ausfallen.',
+	[], false, true)
