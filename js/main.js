@@ -100,10 +100,10 @@ return new bootstrap.Tooltip(tooltipTriggerEl)
 /*-------------------------------------
 			News & Archiv			
 -------------------------------------*/
-function CreateBlogElement(parentId, titleText, paragraphText, images, textRightSide, notContent) {
+function CreateBlogElement(parentId, titleText, paragraphText, images, textRightSide, FirstArticle) {
 	// Erstelle den Container
 	var container = document.createElement('div');
-	container.className = notContent ? 'd-flex flex-column flex-xl-row' : 'd-flex flex-column flex-xl-row content';
+	container.className = FirstArticle ? 'd-flex flex-column flex-xl-row' : 'd-flex flex-column flex-xl-row content';
 
 	// Erstelle den Textbereich
 	var textDiv = document.createElement('div');
@@ -202,6 +202,12 @@ function CreateBlogElement(parentId, titleText, paragraphText, images, textRight
 }
 
 /*------------Blog Elemente-----------------*/
+/* Richtige Erstellung:
+/* CreateBlogElement('Jahr-Blognummer', 'Titel', 'Text (<br> für Absätze)', 
+					[{src: 'BildPfad'}](Bilder kann auch loading/style Attribute mitgegen werden),
+					jeder 2. Artikel kommt auf die rechte Seite -> dann true; der Erste Artikel bekommt immer ein true)
+
+
 /*23/24*/
 CreateBlogElement('23/24-1', 'Vorbereitungen', 
 	'In diesem Schuljahr ist unser Team stark angewachsen. Um unseren neuen jungen Mitgliedern gerecht zu werden, haben wir das Team "RoboBirds" ins Leben gerufen. Die Vorbereitungen für die bevorstehenden Wettbewerbe sind in vollem Gange, und die Vorfreude auf den Wettbewerbstag steigt stetig. Wir hoffen, dort auch einige bekannte Gesichter wiederzusehen! <br> Die RoboFreaks starten dieses Jahr in Nürnberg.',
@@ -211,10 +217,11 @@ CreateBlogElement('23/24-2', 'Regionalwettbewerb Ilmenau' ,
 	'Die Robobirds (unser neues & junges Team) haben am Regionalwettbewerb in Ilmenau teilgenommen. Die gesamte Organisation vor Ort war wie im Jahr zuvor wieder unglaublich gut. Wir wurden bestens versorgt und es war spitze, wieder die ganzen uns schon bekannten Teams, aber auch neue zu treffen. <br> Im RobotGame haben wir uns in den Vorrunden gut geschlagen und sind so ins Halbfinale und dann sogar noch ins Finale gekommen. Die Spannung bei der Siegerehrung war also riesig. <br> Letztendlich kamen wir auf einen unglaublichen 2. Platz und haben uns damit sogar für die nächste Runde in Regensburg qualifiziert! <br> Robot Game: 2; Robot Design: Top 4; Forschung: Top 4; Grundwerte: 1', 
 	[{src: '../assets/seasons/23-24/Ilmenau-RobotGame.jpg'},{src: '../assets/seasons/23-24/Ilmenau-Forschung1.jpg'}, {src: '../assets/seasons/23-24/Ilmenau-Forschung2.jpg'}], 
 	true);
-CreateBlogElement('23/24-2', 'Regionalwettbewerb Nürnberg',
-	'Zum ersten mal seit 5 Jahren sind wir nach Nürnberg zum Regionalwettbewerb gegangen. Insgesamt konnten wir den 2. Platz belegen. <br> RobotGame: 2; RobotDesign: N/A; Forschung: Top 4; Grundwerte: 1',
-	[], 
-)
+CreateBlogElement('23/24-3', 'Regionalwettbewerb Nürnberg',
+	'Zum ersten mal seit 5 Jahren sind wir wieder nach Nürnberg zum Regionalwettbewerb gegangen. Die Location an der Burg in Nürnberg ist wunderschön und der Wettbewerb war super organisiert. Insgesamt konnten wir den 2. Platz belegen und qualifizierten uns somit für den Wettbewerb in Regensburg. <br> RobotGame: 2; RobotDesign: N/A; Forschung: Top 4; Grundwerte: 1',
+	[{src: '../assets/seasons/23-24/Nürnberg-Siegerbild.jpg'},{src: '../assets/seasons/23-24/Nürnberg-Robotgame1.jpg'}, {src: '../assets/seasons/23-24/Nürnberg-Robotgame2.jpg'},
+	{src: '../assets/seasons/23-24/Nürnberg-Robotgame3.jpg'}, {src: '../assets/seasons/23-24/Nürnberg-Preisverleihung.jpeg'}],
+	false);
 
 /*22/23*/
 CreateBlogElement('22/23-1', 'Regionalwettbewerb Ilmenau:',
