@@ -222,6 +222,9 @@ CreateBlogElement('23/24-3', 'Regionalwettbewerb Nürnberg',
 	[{src: '../assets/seasons/23-24/Nürnberg-Siegerbild.jpg'},{src: '../assets/seasons/23-24/Nürnberg-Robotgame1.jpg'}, {src: '../assets/seasons/23-24/Nürnberg-Robotgame2.jpg'},
 	{src: '../assets/seasons/23-24/Nürnberg-Robotgame3.jpg'}, {src: '../assets/seasons/23-24/Nürnberg-Preisverleihung.jpeg'}],
 	false);
+CreateBlogElement('23/24-4', 'Qualifikationswettbewerb Regensburg',
+	'Mit unseren beiden Teams RoboFreaks und Robobirds durften wir in Regensburg am Qualifikationswettbewerb teilnehmen. Wir konnten zwar keinen Pokal gewinnen, hatten aber unheimlich viel Spaß als Gruppe den ganzen Tag zu verbringen. Ganz liebe Grüße gehen auch an die Teams GGI R2D2, LEGOminati & RTG-NextGeneration.',
+	[])
 
 /*22/23*/
 CreateBlogElement('22/23-1', 'Regionalwettbewerb Ilmenau:',
