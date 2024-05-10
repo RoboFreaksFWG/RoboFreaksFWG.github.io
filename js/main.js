@@ -227,7 +227,9 @@ CreateBlogElement('23/24-3', 'Regionalwettbewerb Nürnberg',
 	false);
 CreateBlogElement('23/24-4', 'Qualifikationswettbewerb Regensburg',
 	'Mit unseren beiden Teams RoboFreaks und Robobirds durften wir in Regensburg am Qualifikationswettbewerb teilnehmen. Wir konnten zwar keinen Pokal gewinnen, hatten aber unheimlich viel Spaß als Gruppe den ganzen Tag zu verbringen. Ganz liebe Grüße gehen auch an die Teams GGI R2D2, LEGOminati & RTG-NextGeneration.',
-	[{src:'../assets/seasons/23-24/Regensburg-Gruppenbild.JPG'}, {src:'../assets/seasons/23-24/Regensburg-Vorbereitung.jpeg', style: {'object-position': 'center'}}, {src:'../assets/seasons/23-24/Regensburg-RobotGame1.jpg'}, {src:'../assets/seasons/23-24/Regensburg-RobotGame2.JPG'}, {src:'../assets/seasons/23-24/Regensburg-RobotGame3.JPG'}, {src:'../assets/seasons/23-24/Regensburg-Birds.jpeg'}, {src:'../assets/seasons/23-24/Regensburg-Freaks.jpeg'}], true);
+	[{src:'../assets/seasons/23-24/Regensburg-Gruppenbild.JPG'}, {src:'../assets/seasons/23-24/Regensburg-Vorbereitung.jpeg'}, {src:'../assets/seasons/23-24/Regensburg-RobotGame1.jpg'}, {src:'../assets/seasons/23-24/Regensburg-RobotGame2.jpg'}, {src:'../assets/seasons/23-24/Regensburg-RobotGame3.JPG'},
+	{src:'../assets/seasons/23-24/Regensburg-Birds.jpeg'}, {src:'../assets/seasons/23-24/Regensburg-Freaks.jpeg'}],
+	true);
 
 /*22/23*/
 CreateBlogElement('22/23-1', 'Regionalwettbewerb Ilmenau:',
