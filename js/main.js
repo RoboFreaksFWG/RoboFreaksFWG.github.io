@@ -207,6 +207,9 @@ function CreateBlogElement(parentId, titleText, paragraphText, images, textRight
 					[{src: 'BildPfad'}](Bilder kann auch loading/style Attribute mitgegen werden),
 					jeder 2. Artikel kommt auf die rechte Seite -> dann true; der Erste Artikel bekommt immer ein true)
 
+/*24/25*/
+CreateBlogElement('24/25-1', 'Vorbereitungen',
+	'Gespannt verfolgen wir schon jetzt, wie die nächste Season aussehen wird und überlegen, was genau hinter dem Thema "Submerged" stecken könnte.', []);
 
 /*23/24*/
 CreateBlogElement('23/24-1', 'Vorbereitungen', 
