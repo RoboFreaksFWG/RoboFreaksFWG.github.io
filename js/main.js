@@ -209,8 +209,7 @@ function CreateBlogElement(parentId, titleText, paragraphText, images, textRight
 
 /*24/25*/
 CreateBlogElement('24/25-1', 'Vorbereitungen',
-	'Gespannt verfolgen wir schon jetzt, wie die nächste Season aussehen wird und überlegen, was genau hinter dem Thema "Submerged" stecken könnte.', []);
-
+	'Die Vorbereitungen für RobotGame, Forschung und RobotDesign laufen auf hochtouren. Wir freuen uns schon auf den Wettbewerb am 25.01.25 in Ilmenau. :)', []);
 /*23/24*/
 CreateBlogElement('23/24-1', 'Vorbereitungen', 
 	'In diesem Schuljahr ist unser Team stark angewachsen. Um unseren neuen jungen Mitgliedern gerecht zu werden, haben wir das Team "RoboBirds" ins Leben gerufen. Die Vorbereitungen für die bevorstehenden Wettbewerbe sind in vollem Gange, und die Vorfreude auf den Wettbewerbstag steigt stetig. Wir hoffen, dort auch einige bekannte Gesichter wiederzusehen! <br> Die RoboFreaks starten dieses Jahr in Nürnberg.',
