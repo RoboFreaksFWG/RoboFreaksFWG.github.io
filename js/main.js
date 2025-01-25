@@ -208,12 +208,17 @@ function CreateBlogElement(parentId, titleText, paragraphText, images, textRight
 					jeder 2. Artikel kommt auf die rechte Seite -> dann true; der Erste Artikel bekommt immer ein true)
 
 /*24/25*/
+CreateBlogElement('24/25-2', 'Regionalwettbewerb Ilmenau',
+	'Am 25.01.25 war der Regionalwettbewerb in Ilmenau. Die Organisation des Wettbewerbs war sagenhaft. Wir wurden mit viel Essen, Snacks und Getränken versorgt. Der Ablauf des Programms lief tadellos. Das macht wirklich immer sehr viel Spaß! <br> Dieses Jahr sind wir wieder mit nur einem Team angetreten. In der Vorrunde hat unser Robi nicht ganz so funktioniert wie er sollte. Trotzdem haben wir das Halbfinale erreicht und am Ende den 4. Platz gemacht. Unsere Forschung durften wir nocheinmal vor dem gesamten Publikum vorstellen und wurden _. Damit haben wir in der gesamt Platzierung den _ Platz erreicht',
+	[{src: '../assets/seasons/24-25/Ilmenau-Forschung.jpeg'}]);
 CreateBlogElement('24/25-1', 'Vorbereitungen',
-	'Die Vorbereitungen für RobotGame, Forschung und RobotDesign laufen auf hochtouren. Wir freuen uns schon auf den Wettbewerb am 25.01.25 in Ilmenau. :)', []);
-/*23/24*/
+	'Die Vorbereitungen für RobotGame, Forschung und RobotDesign laufen auf hochtouren. Wir freuen uns schon auf den Wettbewerb am 25.01.25 in Ilmenau. :)', 
+	[{src: '../assets/seasons/24-25/Vorbereitung.jpeg'}], false, true);
+
+	/*23/24*/
 CreateBlogElement('23/24-1', 'Vorbereitungen', 
 	'In diesem Schuljahr ist unser Team stark angewachsen. Um unseren neuen jungen Mitgliedern gerecht zu werden, haben wir das Team "RoboBirds" ins Leben gerufen. Die Vorbereitungen für die bevorstehenden Wettbewerbe sind in vollem Gange, und die Vorfreude auf den Wettbewerbstag steigt stetig. Wir hoffen, dort auch einige bekannte Gesichter wiederzusehen! <br> Die RoboFreaks starten dieses Jahr in Nürnberg.',
-	[{src: '../assets/seasons/23-24/Vorbereitung.jpg', loading: 'eager'},{src: '../assets/seasons/23-24/SpielfeldAufbau.jpg'}],
+	[{src: '../assets/seasons/23-24/Vorbereitung.jpg'},{src: '../assets/seasons/23-24/SpielfeldAufbau.jpg'}],
 	false, true);
 CreateBlogElement('23/24-2', 'Regionalwettbewerb Ilmenau' , 
 	'Die Robobirds (unser neues & junges Team) haben am Regionalwettbewerb in Ilmenau teilgenommen. Die gesamte Organisation vor Ort war wie im Jahr zuvor wieder unglaublich gut. Wir wurden bestens versorgt und es war spitze, wieder die ganzen uns schon bekannten Teams, aber auch neue zu treffen. <br> Im RobotGame haben wir uns in den Vorrunden gut geschlagen und sind so ins Halbfinale und dann sogar noch ins Finale gekommen. Die Spannung bei der Siegerehrung war also riesig. <br> Letztendlich kamen wir auf einen unglaublichen 2. Platz und haben uns damit sogar für die nächste Runde in Regensburg qualifiziert! <br> Robot Game: 2; Robot Design: Top 4; Forschung: Top 4; Grundwerte: 1', 
