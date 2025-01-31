@@ -42,6 +42,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	typeWriter("typed-text", "RoboFreaks", 150); // Geschwindigkeit in Millisekunden
 });
 
+/*-------------------------------------
+			Profilbilder 
+-------------------------------------*/
+function imageLoaded() {
+	document.getElementById('placeholder').style.display = 'none';
+	document.getElementById('loadedImage').classList.remove('d-none');
+}
 
 /*-------------------------------------
 			Counting Numbers 
@@ -210,7 +217,7 @@ function CreateBlogElement(parentId, titleText, paragraphText, images, textRight
 /*24/25*/
 CreateBlogElement('24/25-2', 'Regionalwettbewerb Ilmenau',
 	'Am 25.01.25 waren wir in Ilmenau. Die Organisation des Wettbewerbs war sagenhaft. Wir wurden mit viel Essen, Snacks und Getränken versorgt. Der Ablauf des Programms lief tadellos. Das macht wirklich immer sehr viel Spaß! <br> Dieses Jahr sind wir wieder mit nur einem Team angetreten. In der Vorrunde hat unser Robi nicht ganz so funktioniert wie er sollte. Trotzdem haben wir das Halbfinale erreicht und am Ende den 4. Platz gemacht. Unsere Forschung durften wir noch einmal vor dem gesamten Publikum vorstellen und kamen in die Top 4. Auch im Robot Design konnten wir die Top 4 erreichen und wurden damit tatsächlich Champion in Ilmenau! <br> Somit dürfen wir am 1. März nach Regensburg. Herzlichen Glückwunsch auch an GGI R2D2 - wir sehen und wieder in Regensburg. :) <br> Robot Game: 4; Robot Design, Forschung & Grundwerte: Top 4; Gesamt: 1',
-	[{src: '../assets/seasons/24-25/Ilmenau-Team.JPG', loading:'eager'},{src: '../assets/seasons/24-25/Ilmenau-Design.jpg'},{src: '../assets/seasons/24-25/Ilmenau-RobotGame.JPG', style: {'object-position': 'bottom'}} ,{src: '../assets/seasons/24-25/Ilmenau-Forschung.JPG'},{src: '../assets/seasons/24-25/Ilmenau-Sieger.JPG'}]);
+	[{src: '../assets/seasons/24-25/Ilmenau-Team.JPG', loading:'eager'},{src: '../assets/seasons/24-25/Ilmenau-Design.jpg'},{src: '../assets/seasons/24-25/Ilmenau-RobotGame.JPG', style: {'object-position': 'bottom'}} ,{src: '../assets/seasons/24-25/Ilmenau-Forschung.JPG'},{src: '../assets/seasons/24-25/Ilmenau-Sieger.JPG'}], false, true);
 CreateBlogElement('24/25-1', 'Vorbereitungen',
 	'Die Vorbereitungen für RobotGame, Forschung und RobotDesign laufen auf hochtouren. Wir freuen uns schon auf den Wettbewerb am 25.01.25 in Ilmenau. :)',
 	[{src: '../assets/seasons/24-25/Vorbereitung.jpeg'}], false, true);

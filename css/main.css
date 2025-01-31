@@ -59,6 +59,17 @@ footer {
 	text-align: center;
 	padding: 10px 0;
 }
+@keyframes pulse {
+	0% {
+	background-color: #666666;
+	}
+	50% {
+	background-color: #bbbbbb;
+	}
+	100% {
+	background-color: #666666;
+	}
+}
 
 /*----------- font-sizes ----------*/
 .text{
@@ -329,22 +340,11 @@ h4{
 	hyphens: auto;
 }
 
-.skeleton {
+.blog .skeleton {
 	width: 558px;
 	min-width: 558px;
 	background-color: #9b9b9b;
 	animation: pulse 2.5s infinite ease-in-out;
-}
-@keyframes pulse {
-	0% {
-	background-color: #666666;
-	}
-	50% {
-	background-color: #bbbbbb;
-	}
-	100% {
-	background-color: #666666;
-	}
 }
 
 @media (min-width:1400px){
@@ -352,7 +352,7 @@ h4{
 		width: 616px;
 		min-width: 616px;
 	}
-	.skeleton{
+	.blog .skeleton{
 		width: 648px;
 		min-width: 648px;
 	}
@@ -368,28 +368,28 @@ h4{
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}
-	.skeleton{
+	.blog .skeleton{
 		width: 936px ;
 		min-width: 936px;
 	}
 }
 
 @media (max-width: 991px) {
-	.skeleton {
+	.blog .skeleton {
 		width: 696px; /* Max-Width für 'md' Container */
 		min-width: 696px;
 	}
 }
 
 @media (max-width: 767px) {
-	.skeleton {
+	.blog .skeleton {
 		width: 516px; /* Max-Width für 'sm' Container */
 		min-width: 516px;
 	}
 }
 
 @media (max-width: 575px) {
-	.skeleton {
+	.blog .skeleton {
 		width: 100%; /* Für 'xs' Bildschirme, volle Breite */
 		min-width: 100%;
 	}
