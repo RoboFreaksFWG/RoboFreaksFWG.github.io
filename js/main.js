@@ -42,6 +42,41 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	typeWriter("typed-text", "RoboFreaks", 150); // Geschwindigkeit in Millisekunden
 });
 
+
+/*-------------------------------------
+				Countdown
+-------------------------------------*/
+const EVENT_YEAR = 2025;
+const EVENT_MONTH = 2; //Jan=0; Feb=1
+const EVENT_DAY = 1;
+const EVENT_HOUR = 16;
+const EVENT_MINUTE = 40;
+
+const MONTH_NAMES = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+
+function updateCountdown() {
+    const timerElement = document.getElementById("Timer");
+    const eventDate = new Date(EVENT_YEAR, EVENT_MONTH, EVENT_DAY, EVENT_HOUR, EVENT_MINUTE, 0);
+    const now = new Date();
+
+    if (now < eventDate) {
+        const diff = eventDate - now;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        timerElement.textContent = `Der nächste Wettkampf ist in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    } else if (now.getDate() === EVENT_DAY && now.getMonth() === EVENT_MONTH) {
+        timerElement.textContent = "Der Wettkampf läuft gerade! Schau doch mal auf unserem Instagram vorbei.";
+    } else {
+        timerElement.textContent = `Der Wettkampf hat am ${EVENT_DAY}. ${MONTH_NAMES[EVENT_MONTH]} stattgefunden.`;
+    }
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+
 /*-------------------------------------
 			Profilbilder 
 -------------------------------------*/
