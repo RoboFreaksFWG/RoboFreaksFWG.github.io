@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 const EVENT_YEAR = 2025;
 const EVENT_MONTH = 2; //Jan=0; Feb=1
 const EVENT_DAY = 1;
-const EVENT_HOUR = 16;
-const EVENT_MINUTE = 40;
+const EVENT_HOUR = 9;
+const EVENT_MINUTE = 30;
 
 const MONTH_NAMES = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
 
