@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 /*-------------------------------------
 				Countdown
 -------------------------------------*/
-const EVENT_YEAR = 2025;
-const EVENT_MONTH = 2; //Jan=0; Feb=1
-const EVENT_DAY = 1;
+const EVENT_YEAR = 2026;
+const EVENT_MONTH = 0; //Jan=0; Feb=1
+const EVENT_DAY = 10;
 const EVENT_HOUR = 9;
 const EVENT_MINUTE = 30;
 
