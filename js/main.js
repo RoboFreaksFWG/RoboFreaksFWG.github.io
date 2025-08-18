@@ -267,8 +267,15 @@ loadBlogPost('blog/24-25-regensburg-live.html',
 loadBlogPost('blog/24-25-regensburg.html',
 	'24/25-3',
 	'Qualifikationswettbewerb Regensburg',
-	[],
-	true, false);
+	[
+		{src: '../assets/seasons/24-25/Regensburg-Team1.jpeg'},
+		{src: '../assets/seasons/24-25/Regensburg-RobotGame1.jpeg'},
+		{src: '../assets/seasons/24-25/Regensburg-RobotGame2.jpeg'},
+		{src: '../assets/seasons/24-25/Regensburg-Forschung.jpeg'},
+		{src: '../assets/seasons/24-25/Regensburg-Design.jpeg'},
+		{src: '../assets/seasons/24-25/Regensburg-Team2.jpeg'}
+	],
+	false, false);
 
 
 /*23/24*/
