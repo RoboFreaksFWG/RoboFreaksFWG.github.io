@@ -243,11 +243,11 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
 					jeder 2. Artikel kommt auf die rechte Seite -> dann true; der Erste Artikel bekommt immer ein true)
 
 /*24/25*/
-loadBlogPost('blog/24-25-regensburg-live.html', 
-	'24/25-3-live', 
-	'Quali Regensburg',
-	[ {src: '../assets/LiveBanner.png'}],
-	  false, false);
+loadBlogPost('blog/24-25-vorbereitung.html',
+	'24/25-1',
+	'Vorbereitungen',
+	[{src: '../assets/seasons/24-25/Vorbereitung.jpeg'}],
+	false, true);
 loadBlogPost('blog/24-25-ilmenau.html',
 	'24/25-2',
 	'Regionalwettbewerb Ilmenau',
@@ -257,17 +257,21 @@ loadBlogPost('blog/24-25-ilmenau.html',
 		{src: '../assets/seasons/24-25/Ilmenau-RobotGame.JPG', style: {'object-position': 'bottom'}},
 		{src: '../assets/seasons/24-25/Ilmenau-Forschung.JPG'},
 		{src: '../assets/seasons/24-25/Ilmenau-Sieger.JPG'}
-	  ],
-	  true, false);
-loadBlogPost('blog/24-25-vorbereitung.html',
-	'24/25-1',
-	'Vorbereitungen',
-	[{src: '../assets/seasons/24-25/Vorbereitung.jpeg'}],
-	false, true);
+		],
+	true, false);
+loadBlogPost('blog/24-25-regensburg-live.html', 
+	'24/25-3-live', 
+	'Live aus Regensburg',
+	[{src: '../assets/LiveBanner.png'}],
+	false, false);
+loadBlogPost('blog/24-25-regensburg.html',
+	'24/25-3',
+	'Qualifikationswettbewerb Regensburg',
+	[],
+	true, false);
 
 
-
-	/*23/24*/
+/*23/24*/
 loadBlogPost('blog/23-24-vorbereitungen.html',
 	'23/24-1',
 	'Vorbereitungen',
@@ -276,7 +280,6 @@ loadBlogPost('blog/23-24-vorbereitungen.html',
 		{src: '../assets/seasons/23-24/SpielfeldAufbau.jpg'}
 	],
 	false, true);
-
 loadBlogPost('blog/23-24-ilmenau.html',
 	'23/24-2',
 	'Regionalwettbewerb Ilmenau',
@@ -286,7 +289,6 @@ loadBlogPost('blog/23-24-ilmenau.html',
 		{src: '../assets/seasons/23-24/Ilmenau-Forschung2.jpg'}
 	],
 	true, false);
-
 loadBlogPost('blog/23-24-nürnberg.html',
 	'23/24-3',
 	'Regionalwettbewerb Nürnberg',
@@ -298,7 +300,6 @@ loadBlogPost('blog/23-24-nürnberg.html',
 		{src: '../assets/seasons/23-24/Nürnberg-Preisverleihung.jpeg'}
 	],
 	false, false);
-
 loadBlogPost('blog/23-24-regensburg.html',
 	'23/24-4',
 	'Qualifikationswettbewerb Regensburg',
@@ -313,6 +314,7 @@ loadBlogPost('blog/23-24-regensburg.html',
 	],
 	true, false);
 
+
 /*22/23*/
 loadBlogPost('blog/22-23-ilmenau.html',
 	'22/23-1',
@@ -325,7 +327,8 @@ loadBlogPost('blog/22-23-siegen.html',
 	'Deutschlandentscheid Siegen',
 	[{src: '../assets/seasons/22-23/Siegen-Ende.jpg'},{src:'../assets/seasons/22-23/Siegen-Besprechung.jpeg', style: {'object-position': 'center'}},
 	{src: '../assets/seasons/22-23/Siegen-Jury.jpg'}, {src: '../assets/seasons/22-23/Siegen-RobotGame.jpg'}],
-	true);
+	true, false);
+
 
 /*21/22*/
 loadBlogPost('blog/21-22-ilmenau.html',
@@ -338,13 +341,16 @@ loadBlogPost('blog/21-22-frankfurt.html',
 	'Deutschlandentscheid Frankfurt',
 	[{src: '../assets/seasons/21-22/Frankfurt-Team.jpeg'}, {src: '../assets/seasons/21-22/Frankfurt-Sponsor.png'},
 	{src: '../assets/seasons/21-22/Frankfurt-Gruppenbild.png'}, {src: '../assets/seasons/21-22/Frankfurt-Module.png', style: {'object-position': 'bottom'}}],
-	true);
+	true, false);
 loadBlogPost('blog/21-22-paderborn.html',
 	'21/22-3',
 	'DACH Finale in Paderborn',
 	[{src: '../assets/seasons/21-22/Paderborn-Sieger.JPG'}, {src: '../assets/seasons/21-22/Paderborn-Jury.png'},
 	{src: '../assets/seasons/21-22/Paderborn-Forschung.JPG'}, {src: '../assets/seasons/21-22/Paderborn-RobotGame.JPG'}, {src: '../assets/seasons/21-22/Paderborn-Siegerehrung.JPG'}],
-	true);
+	false, false);
+
+
+/*20/21*/
 loadBlogPost('blog/20-21.html',
 	'20/21-1',
 	'',
