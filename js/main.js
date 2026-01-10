@@ -242,6 +242,16 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
 					[{src: 'BildPfad'}](Bilder kann auch loading/style Attribute mitgegen werden),
 					jeder 2. Artikel kommt auf die rechte Seite -> dann true; der Erste Artikel bekommt immer ein true)
 
+
+ */
+/*25/26  */
+loadBlogPost('blog/25-26-live-ilmenau.html',
+    '25/26-0',
+    'Live in Ilmenau',
+    [],
+    false, true
+    );
+
 /*24/25*/
 loadBlogPost('blog/24-25-vorbereitung.html',
 	'24/25-1',
