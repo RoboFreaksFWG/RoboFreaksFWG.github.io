@@ -244,7 +244,13 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
 
 
  */
-/*25/26  */
+/*25/26*/
+loadBlogPost('/blog/25-26-ilmenau.html',
+    '25/26-1',
+    'Regionalwettbewerb Ilmenau',
+    [],
+    false, true
+    );
 loadBlogPost('blog/25-26-live-ilmenau.html',
     '25/26-0',
     'Live in Ilmenau',
