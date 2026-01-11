@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 				Countdown
 -------------------------------------*/
 const EVENT_YEAR = 2026;
-const EVENT_MONTH = 0; //Jan=0; Feb=1
-const EVENT_DAY = 10;
+const EVENT_MONTH = 2; //Jan=0; Feb=1
+const EVENT_DAY = 1;
 const EVENT_HOUR = 9;
 const EVENT_MINUTE = 30;
 
@@ -238,7 +238,7 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
 
 /*------------Blog Elemente-----------------*/
 /* Richtige Erstellung:
-/* CreateBlogElement('Jahr-Blognummer', 'Titel', 'Text (<br> für Absätze)', 
+/* CreateBlogElement('Jahr-Blognummer', 'Titel', 'Text (<br> für Absätze)',
 					[{src: 'BildPfad'}](Bilder kann auch loading/style Attribute mitgegen werden),
 					jeder 2. Artikel kommt auf die rechte Seite -> dann true; der Erste Artikel bekommt immer ein true)
 
