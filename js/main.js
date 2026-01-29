@@ -248,7 +248,14 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
 loadBlogPost('/blog/25-26-ilmenau.html',
     '25/26-1',
     'Regionalwettbewerb Ilmenau',
-    [],
+    [
+		{src:'../assets/seasons/25-26/Ilmenau-Team.JPG'},
+		{src:'../assets/seasons/25-26/Ilmenau-RobotGame1.JPG'},
+		{src:'../assets/seasons/25-26/Ilmenau-Forschung1.JPG'},
+		{src:'../assets/seasons/25-26/Ilmenau-Forschung2.JPG'},
+		{src:'../assets/seasons/25-26/Ilmenau-RobotGame2.JPG'},
+		{src:'../assets/seasons/25-26/Ilmenau-Sieger.JPG'},
+	],
     false, true
     );
 loadBlogPost('blog/25-26-live-ilmenau.html',
