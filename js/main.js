@@ -245,6 +245,12 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
 
  */
 /*25/26*/
+loadBlogPost('/blog/25-26-braunschweig.html',
+	'25/26-2',
+	'Qualifikationswettbewerb Braunschweig',
+	[],
+	false, true
+	);
 loadBlogPost('/blog/25-26-ilmenau.html',
     '25/26-1',
     'Regionalwettbewerb Ilmenau',
