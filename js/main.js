@@ -251,7 +251,7 @@ loadBlogPost('/blog/25-26-braunschweig.html',
 	[
 		{src: "../assets/seasons/25-26/Braunschweig-RobotGame1.png"},
 		{src: "../assets/seasons/25-26/Braunschweig-RobotGame2.png"},
-		{src: "../assets/seasons/25-26/Braunschweig-Siegerehrung1.jpeg"}
+		{src: "../assets/seasons/25-26/Braunschweig-Siegerehrung1.jpeg"},
 
 	],
 	false, true
