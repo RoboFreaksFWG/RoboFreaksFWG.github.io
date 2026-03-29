@@ -248,7 +248,12 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
 loadBlogPost('/blog/25-26-braunschweig.html',
 	'25/26-2',
 	'Qualifikationswettbewerb Braunschweig',
-	[],
+	[
+		{src: "../assets/seasons/25-26/Braunschweig-RobotGame1.png"},
+		{src: "../assets/seasons/25-26/Braunschweig-RobotGame2.png"},
+		{src: "../assets/seasons/25-26/Braunschweig-Siegerehrung1.jpeg"}
+
+	],
 	false, true
 	);
 loadBlogPost('/blog/25-26-ilmenau.html',
