@@ -70,7 +70,7 @@ function updateCountdown() {
     } else if (now.getDate() === EVENT_DAY && now.getMonth() === EVENT_MONTH) {
         timerElement.textContent = "Der Wettkampf läuft gerade! Schau doch mal auf unserem Instagram vorbei.";
     } else {
-        timerElement.textContent = `Der Wettkampf hat am ${EVENT_DAY}. ${MONTH_NAMES[EVENT_MONTH]} stattgefunden.`;
+        timerElement.textContent = `Der letzte Wettkampf hat am ${EVENT_DAY}. ${MONTH_NAMES[EVENT_MONTH]} stattgefunden.`;
     }
 }
 setInterval(updateCountdown, 1000);
@@ -127,7 +127,7 @@ class CountUp {
 
 // Initialize any number of counters:
 new CountUp('#start1', '#count-fll', 0)
-new CountUp('#start1', '#count-lego', 14500)
+new CountUp('#start1', '#count-lego', 13600)
 new CountUp('#start1', '#count-döner', 0)
 
 
