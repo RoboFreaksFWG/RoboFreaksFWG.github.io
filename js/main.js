@@ -127,7 +127,7 @@ class CountUp {
 
 // Initialize any number of counters:
 new CountUp('#start1', '#count-fll', 0)
-new CountUp('#start1', '#count-lego', 23000)
+new CountUp('#start1', '#count-lego', 25800)
 new CountUp('#start1', '#count-döner', 0)
 
 
