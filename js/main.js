@@ -246,10 +246,10 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
  */
 /*26/27*/
 loadBlogPost('/blog/26-27-vorbereitung.html',
-	'26-27-1',
+	'26/27-1',
 	'Vorbereitung',
-	[{src:'../assets/seasons/25-26/Ilmenau-Team.JPG'}],
-	true, true
+	[{src:'../assets/seasons/26-27/Vorbereitung-Recherche.jpg'}],
+	false, true
 	);
 
 
