@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 /*-------------------------------------
 				Countdown
 -------------------------------------*/
-const EVENT_YEAR = 2026;
-const EVENT_MONTH = 2; //Jan=0; Feb=1
-const EVENT_DAY = 1;
+const EVENT_YEAR = 2027;
+const EVENT_MONTH = 0; //Jan=0; Feb=1
+const EVENT_DAY = 16;
 const EVENT_HOUR = 9;
-const EVENT_MINUTE = 30;
+const EVENT_MINUTE = 0;
 
 const MONTH_NAMES = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
 
@@ -127,7 +127,7 @@ class CountUp {
 
 // Initialize any number of counters:
 new CountUp('#start1', '#count-fll', 0)
-new CountUp('#start1', '#count-lego', 25800)
+new CountUp('#start1', '#count-lego', 38500)
 new CountUp('#start1', '#count-döner', 0)
 
 
@@ -244,18 +244,22 @@ function loadBlogPost(url, parentId, title, images, textRightSide, firstArticle)
 
 
  */
-/*25/26*/
-loadBlogPost('/blog/25-26-braunschweig.html',
-	'25/26-2',
-	'Qualifikationswettbewerb Braunschweig',
-	[
-		{src: "../assets/seasons/25-26/Braunschweig-RobotGame1.png"},
-		{src: "../assets/seasons/25-26/Braunschweig-RobotGame2.png"},
-		{src: "../assets/seasons/25-26/Braunschweig-Siegerehrung1.jpeg"},
-
-	],
-	false, true
+/*26/27*/
+loadBlogPost('/blog/26-27-vorbereitung.html',
+	'26-27-1',
+	'Vorbereitung',
+	[{src:'../assets/seasons/25-26/Ilmenau-Team.JPG'}],
+	true, true
 	);
+
+
+/*25/26*/
+loadBlogPost('blog/25-26-live-ilmenau.html',
+	'25/26-0',
+	'Live in Ilmenau',
+	[],
+	true, false
+);
 loadBlogPost('/blog/25-26-ilmenau.html',
     '25/26-1',
     'Regionalwettbewerb Ilmenau',
@@ -269,12 +273,18 @@ loadBlogPost('/blog/25-26-ilmenau.html',
 	],
     false, true
     );
-loadBlogPost('blog/25-26-live-ilmenau.html',
-    '25/26-0',
-    'Live in Ilmenau',
-    [],
-    false, true
-    );
+loadBlogPost('/blog/25-26-braunschweig.html',
+	'25/26-2',
+	'Qualifikationswettbewerb Braunschweig',
+	[
+		{src: "../assets/seasons/25-26/Braunschweig-RobotGame1.png"},
+		{src: "../assets/seasons/25-26/Braunschweig-RobotGame2.png"},
+		{src: "../assets/seasons/25-26/Braunschweig-Siegerehrung1.jpeg"},
+
+	],
+	true, false
+);
+
 
 /*24/25*/
 loadBlogPost('blog/24-25-vorbereitung.html',
